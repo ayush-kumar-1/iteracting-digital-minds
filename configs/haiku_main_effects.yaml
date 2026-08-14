@@ -1,0 +1,39 @@
+experiment:
+  name: haiku_main_effects_v1
+  dataset_version: experiment_library_en_revision_2
+  language: en
+
+model:
+  provider: anthropic
+  model: claude-haiku-4-5-20251001
+  temperature: 1.0
+  max_tokens: 16
+
+sampling:
+  replicates_per_order: 10
+  option_orders: [AB, BA]
+
+scenarios:
+  include: [within_question]
+
+design:
+  baseline: true
+  context:
+    enabled: true
+    frames: all
+    history_lengths: [1, 3, 5]
+  profiles:
+    enabled: true
+    profiles: all
+  elicitation:
+    enabled: true
+    templates: all
+  interactions:
+    enabled: false
+
+generation:
+  canonical_histories: true
+  use_batch_api: true
+  batch_request_limit: 90000
+  batch_byte_limit: 251658240
+  smoke_test_requests: 40
