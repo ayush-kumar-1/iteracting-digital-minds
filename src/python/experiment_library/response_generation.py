@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 from collections import Counter, defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 from datetime import UTC, datetime
 import hashlib
@@ -31,6 +32,7 @@ BATCH_INPUT_PRICE_PER_MILLION = 0.50
 BATCH_OUTPUT_PRICE_PER_MILLION = 2.50
 DEFAULT_BATCH_REQUEST_LIMIT = 90_000
 DEFAULT_BATCH_BYTE_LIMIT = 240 * 1024 * 1024
+DEFAULT_TOKEN_COUNT_CONCURRENCY = 8
 NONE = "NONE"
 
 
@@ -506,7 +508,14 @@ def _load_client() -> AnthropicClient:
     secret_values = json.loads(secrets_path.read_text(encoding="utf-8"))
     if not isinstance(secret_values, dict):
         raise ValueError("secrets.json must be a JSON object.")
-    api_key = next((secret_values.get(key) for key in ("ANTHROPIC_API_KEY", "anthropic_api_key", "api_key") if secret_values.get(key)), None)
+    api_key = next(
+        (
+            secret_values.get(key)
+            for key in ("anthropic-api-key", "ANTHROPIC_API_KEY", "anthropic_api_key", "anthropic_key", "api_key")
+            if isinstance(secret_values.get(key), str) and secret_values[key]
+        ),
+        None,
+    )
     if not isinstance(api_key, str):
         raise ValueError("secrets.json has no Anthropic API key under an accepted key name.")
     from anthropic import Anthropic
@@ -547,13 +556,24 @@ def estimate_cost(paths: RunPaths, client: AnthropicClient | None = None) -> dic
     by_prompt: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for row in manifest:
         by_prompt[row["prompt_sha256"]].append(row)
-    counts_by_prompt: dict[str, int] = {}
-    for prompt_hash, rows in by_prompt.items():
+    def count_prompt(prompt_hash: str, rows: list[dict[str, Any]]) -> tuple[str, int]:
         request = requests[rows[0]["custom_id"]]
         response = client.messages.count_tokens(
             model=request["params"]["model"], system=request["system"], messages=request["messages"]
         )
-        counts_by_prompt[prompt_hash] = int(_plain(response)["input_tokens"])
+        return prompt_hash, int(_plain(response)["input_tokens"])
+
+    count_concurrency = int(
+        _load_run_config(paths)["generation"].get("token_count_concurrency", DEFAULT_TOKEN_COUNT_CONCURRENCY)
+    )
+    if count_concurrency < 1:
+        raise ValueError("generation.token_count_concurrency must be positive.")
+    counts_by_prompt: dict[str, int] = {}
+    with ThreadPoolExecutor(max_workers=count_concurrency) as executor:
+        futures = [executor.submit(count_prompt, prompt_hash, rows) for prompt_hash, rows in by_prompt.items()]
+        for future in as_completed(futures):
+            prompt_hash, input_tokens = future.result()
+            counts_by_prompt[prompt_hash] = input_tokens
     total_input_tokens = sum(counts_by_prompt[row["prompt_sha256"]] for row in manifest)
     max_prompt_tokens = max(counts_by_prompt.values())
     max_output_tokens = sum(row["max_tokens"] for row in manifest)
@@ -586,6 +606,7 @@ def estimate_cost(paths: RunPaths, client: AnthropicClient | None = None) -> dic
         "estimated_output_cost_basis": "max_tokens for every request; actual output cost will use collected usage",
         "batch_request_limit": int(batch_config["generation"].get("batch_request_limit", DEFAULT_BATCH_REQUEST_LIMIT)),
         "batch_byte_limit": int(batch_config["generation"].get("batch_byte_limit", DEFAULT_BATCH_BYTE_LIMIT)),
+        "token_count_concurrency": count_concurrency,
         "number_of_batches_required": len(chunks),
     }
     write_json(paths.root / "cost_estimate.json", report)

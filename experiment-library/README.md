@@ -75,7 +75,8 @@ Run artifacts are written under `Output/experiments/<run-id>/`:
   value pole.
 
 API operations read the existing root `secrets.json` only at runtime, accepting
-`ANTHROPIC_API_KEY`, `anthropic_api_key`, or `api_key`. It is never copied to
+the repository's `anthropic-api-key` label (plus conventional Anthropic aliases).
+It is never copied to
 the manifest, requests, metadata, or logs. `estimate-cost` counts each unique
 rendered prompt using Anthropic's token-count endpoint before calculating the
 discounted batch estimate. `smoke-test` is synchronous and writes separate
