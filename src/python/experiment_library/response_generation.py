@@ -677,6 +677,50 @@ def _successful_custom_ids(paths: RunPaths) -> set[str]:
     }
 
 
+def _batch_record(
+    paths: RunPaths,
+    manifest: list[dict[str, Any]],
+    batch: dict[str, Any],
+    *,
+    registered_at: str,
+    registration_source: str,
+) -> dict[str, Any]:
+    """Build compact, deterministic bookkeeping for an already-created batch."""
+    request_counts = batch.get("request_counts", {})
+    request_count = sum(value for value in request_counts.values() if isinstance(value, int))
+    return {
+        "run_id": paths.root.name,
+        "batch_id": batch["id"],
+        "submitted_at": registered_at,
+        "request_count": request_count or len(manifest),
+        "custom_ids": [row["custom_id"] for row in manifest],
+        "request_ids": [row["request_id"] for row in manifest],
+        "api_submission": batch,
+        "registration_source": registration_source,
+    }
+
+
+def register_batch(paths: RunPaths, batch_id: str, client: AnthropicClient | None = None) -> dict[str, Any]:
+    """Recover an externally known batch ID without creating another batch."""
+    validate_run(paths)
+    manifest, _ = load_run(paths)
+    client = client or _load_client()
+    batch = _plain(client.messages.batches.retrieve(batch_id))
+    if batch.get("id") != batch_id:
+        raise ValueError("Retrieved batch ID does not match the requested batch ID.")
+    existing = read_jsonl(paths.batches) if paths.batches.exists() else []
+    if any(record["batch_id"] == batch_id for record in existing):
+        return next(record for record in existing if record["batch_id"] == batch_id)
+    record = _batch_record(
+        paths, manifest, batch, registered_at=_utc_now(), registration_source="recovered_existing_batch",
+    )
+    paths.root.mkdir(parents=True, exist_ok=True)
+    with paths.batches.open("a", encoding="utf-8") as handle:
+        handle.write(_canonical_json(record) + "\n")
+        handle.flush()
+    return record
+
+
 def submit(paths: RunPaths, client: AnthropicClient | None = None) -> list[dict[str, Any]]:
     """Submit only observations that are neither completed nor already in flight."""
     validate_run(paths)
@@ -700,15 +744,11 @@ def submit(paths: RunPaths, client: AnthropicClient | None = None) -> list[dict[
                 for request in chunk
             ]
             batch = _plain(client.messages.batches.create(requests=api_requests))
-            record = {
-                "run_id": paths.root.name,
-                "batch_id": batch["id"],
-                "submitted_at": _utc_now(),
-                "request_count": len(chunk),
-                "custom_ids": [request["custom_id"] for request in chunk],
-                "request_ids": [row["request_id"] for row in manifest if row["custom_id"] in {request["custom_id"] for request in chunk}],
-                "api_submission": batch,
-            }
+            chunk_custom_ids = {request["custom_id"] for request in chunk}
+            chunk_manifest = [row for row in manifest if row["custom_id"] in chunk_custom_ids]
+            record = _batch_record(
+                paths, chunk_manifest, batch, registered_at=_utc_now(), registration_source="submitted_by_runner",
+            )
             handle.write(_canonical_json(record) + "\n")
             handle.flush()
             submitted.append(record)
@@ -845,11 +885,13 @@ def _cli() -> argparse.ArgumentParser:
     build = commands.add_parser("build-manifest")
     build.add_argument("--config", type=Path, required=True)
     build.add_argument("--run-id")
-    for name in ("validate", "estimate-cost", "smoke-test", "submit", "status", "collect", "parse", "summarize-run"):
+    for name in ("validate", "estimate-cost", "smoke-test", "register-batch", "submit", "status", "collect", "parse", "summarize-run"):
         command = commands.add_parser(name)
         command.add_argument("--run", required=True)
         if name == "smoke-test":
             command.add_argument("--limit", type=int)
+        if name == "register-batch":
+            command.add_argument("--batch-id", required=True)
     return parser
 
 
@@ -868,6 +910,8 @@ def main() -> None:
         result = estimate_cost(paths)
     elif args.command == "smoke-test":
         result = smoke_test(paths, limit=args.limit)
+    elif args.command == "register-batch":
+        result = {"registered_batch": register_batch(paths, args.batch_id)["batch_id"]}
     elif args.command == "submit":
         result = {"submitted_batches": [record["batch_id"] for record in submit(paths)]}
     elif args.command == "status":

@@ -56,6 +56,7 @@ uv run python -m src.python.experiment_library.response_generation validate --ru
 uv run python -m src.python.experiment_library.response_generation estimate-cost --run <run-id>
 uv run python -m src.python.experiment_library.response_generation smoke-test --run <run-id>
 uv run python -m src.python.experiment_library.response_generation submit --run <run-id>
+uv run python -m src.python.experiment_library.response_generation register-batch --run <run-id> --batch-id <existing-batch-id>
 uv run python -m src.python.experiment_library.response_generation status --run <run-id>
 uv run python -m src.python.experiment_library.response_generation collect --run <run-id>
 uv run python -m src.python.experiment_library.response_generation parse --run <run-id>
@@ -81,3 +82,8 @@ the manifest, requests, metadata, or logs. `estimate-cost` counts each unique
 rendered prompt using Anthropic's token-count endpoint before calculating the
 discounted batch estimate. `smoke-test` is synchronous and writes separate
 non-observation artifacts; it never enters `raw_results.jsonl`.
+
+`register-batch` is a recovery operation only: it retrieves and records an
+already-created batch ID against an existing manifest without sending any new
+requests. It is useful if a process dies after Anthropic accepts a batch but
+before local bookkeeping is written.
