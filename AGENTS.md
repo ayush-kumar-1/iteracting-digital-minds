@@ -1,8 +1,8 @@
 ## Project Setup
 
-### Running files with `uv` 
+### Running files with `uv`
 
-This project is synchronized entirely from the top-level directory. Everything should be run from project root including notebooks and tests, this affects how imports are handled, and care should be taken to keep the import structure of the project clean. 
+This project is synchronized entirely from the top-level directory. Everything should be run from project root including notebooks and tests, this affects how imports are handled, and care should be taken to keep the import structure of the project clean.
 
 ### Running commands with `uv`
 
@@ -37,7 +37,6 @@ Do not manually edit `uv.lock`. If `uv.lock` changes as the result of an approve
 
 Before finishing a session, record any important `uv` commands that were run in `docs/agent-session-log.md`, including whether tests or checks passed.
 
-
 ## Persisting Agent Knowledge Across Sessions
 
 Agents should not rely on chat history as the source of truth. Durable project knowledge must be written into the repository.
@@ -46,11 +45,11 @@ Agents should not rely on chat history as the source of truth. Durable project k
 
 Use the following hierarchy:
 
-* `AGENTS.md`: stable instructions for agents, project conventions, workflows, commands, and links to important docs.
-* `docs/agent-session-log.md`: concise per-session handoff notes describing what changed and what remains.
-* `docs/adr/`: architectural decisions or durable design rationale.
-* `README.md` / package docs: user-facing setup, usage, and development instructions.
-* Issues or TODO-tracking system: future work that should be tracked outside the code.
+- `AGENTS.md`: stable instructions for agents, project conventions, workflows, commands, and links to important docs.
+- `docs/agent-session-log.md`: concise per-session handoff notes describing what changed and what remains.
+- `docs/adr/`: architectural decisions or durable design rationale.
+- `README.md` / package docs: user-facing setup, usage, and development instructions.
+- Issues or TODO-tracking system: future work that should be tracked outside the code.
 
 Do not turn `AGENTS.md` into a running changelog. If a lesson is only about what happened in one session, put it in the session log. If it changes how future agents should work, update `AGENTS.md`.
 
@@ -124,16 +123,16 @@ If the work is not ready for review, open a draft PR and say that explicitly whe
 
 At the end of every session, the agent must add or update an entry in `docs/agent-session-log.md` with:
 
-* Date
-* Branch name
-* User request / session goal
-* Summary of changes made
-* Files changed
-* Commands run
-* Tests run and results
-* Important decisions or assumptions
-* Follow-up work / known issues
-* Files intentionally not touched
+- Date
+- Branch name
+- User request / session goal
+- Summary of changes made
+- Files changed
+- Commands run
+- Tests run and results
+- Important decisions or assumptions
+- Follow-up work / known issues
+- Files intentionally not touched
 
 Keep entries concise, factual, and useful to the next agent.
 
@@ -145,10 +144,10 @@ Every session should leave the repository easier for the next agent to understan
 
 Do not manually edit protected generated or sensitive files unless the user explicitly requests it. In particular:
 
-* Do not manually edit `uv.lock`.
-* Do not edit `pyproject.toml` without explicit permission.
-* Do not edit `.gitignore` without explicit permission.
-* Do not read, print, modify, or commit secrets such as `secrets.json`.
+- Do not manually edit `uv.lock`.
+- Do not edit `pyproject.toml` without explicit permission.
+- Do not edit `.gitignore` without explicit permission.
+- Do not read, print, modify, or commit secrets such as `secrets.json`.
 
 If a dependency change intentionally updates `uv.lock` through `uv sync` or another approved command, mention that clearly in the session log.
 
@@ -156,7 +155,7 @@ If a dependency change intentionally updates `uv.lock` through `uv sync` or anot
 
 The project's datasets are exposed through the top-level `Data` symlink:
 
-* `Data` -> `/Users/ayushkumar/Dropbox/Social Capital (Niche Data)/Data`
+- `Data` -> `/Users/ayushkumar/Dropbox/Social Capital (Niche Data)/Data`
 
 Agents must treat files under `Data` as large external data assets, not normal source files.
 
@@ -175,45 +174,45 @@ Agents must treat files under `Data` as large external data assets, not normal s
 
 Use these files first when you need to understand what is in the datasets:
 
-* `Data/Niche_NYU_202604/README.md`
-* `Data/Niche_NYU_202604/college_dictionary.txt`
-* `Data/Niche_NYU_202604/college_reviews_dictionary.txt`
-* `Data/Niche_NYU_202604/k12_school_dictionary.txt`
-* `Data/Niche_NYU_202604/k12_school_district_dictionary.txt`
-* `Data/Niche_NYU_202604/k12_school_district_reviews_dictionary.txt`
-* `Data/Niche_NYU_202604/k12_school_reviews_dictionary.txt`
-* `Data/SEDA/edu_opportunity/SEDA_documentation_6.0.pdf`
-* `Data/SEDA/edu_opportunity/seda_codebook_admindist_6.0.xlsx`
-* `Data/SEDA/edu_opportunity/seda_codebook_commzone_6.0.xlsx`
-* `Data/SEDA/edu_opportunity/seda_codebook_county_6.0.xlsx`
-* `Data/SEDA/edu_opportunity/seda_codebook_cov_admindist_6.0.xlsx`
-* `Data/SEDA/edu_opportunity/seda_codebook_cov_county_6.0.xlsx`
-* `Data/SEDA/edu_opportunity/seda_codebook_cov_geodist_6.0.xlsx`
-* `Data/SEDA/edu_opportunity/seda_codebook_cov_school_6.0.xlsx`
-* `Data/SEDA/edu_opportunity/seda_codebook_crosswalk_6.0.xlsx`
-* `Data/SEDA/edu_opportunity/seda_codebook_geodist_6.0.xlsx`
-* `Data/SEDA/edu_opportunity/seda_codebook_school_6.0.xlsx`
-* `Data/Social Capital Data/data_release_readme_31_07_2022_nomatrix.pdf`
+- `Data/Niche_NYU_202604/README.md`
+- `Data/Niche_NYU_202604/college_dictionary.txt`
+- `Data/Niche_NYU_202604/college_reviews_dictionary.txt`
+- `Data/Niche_NYU_202604/k12_school_dictionary.txt`
+- `Data/Niche_NYU_202604/k12_school_district_dictionary.txt`
+- `Data/Niche_NYU_202604/k12_school_district_reviews_dictionary.txt`
+- `Data/Niche_NYU_202604/k12_school_reviews_dictionary.txt`
+- `Data/SEDA/edu_opportunity/SEDA_documentation_6.0.pdf`
+- `Data/SEDA/edu_opportunity/seda_codebook_admindist_6.0.xlsx`
+- `Data/SEDA/edu_opportunity/seda_codebook_commzone_6.0.xlsx`
+- `Data/SEDA/edu_opportunity/seda_codebook_county_6.0.xlsx`
+- `Data/SEDA/edu_opportunity/seda_codebook_cov_admindist_6.0.xlsx`
+- `Data/SEDA/edu_opportunity/seda_codebook_cov_county_6.0.xlsx`
+- `Data/SEDA/edu_opportunity/seda_codebook_cov_geodist_6.0.xlsx`
+- `Data/SEDA/edu_opportunity/seda_codebook_cov_school_6.0.xlsx`
+- `Data/SEDA/edu_opportunity/seda_codebook_crosswalk_6.0.xlsx`
+- `Data/SEDA/edu_opportunity/seda_codebook_geodist_6.0.xlsx`
+- `Data/SEDA/edu_opportunity/seda_codebook_school_6.0.xlsx`
+- `Data/Social Capital Data/data_release_readme_31_07_2022_nomatrix.pdf`
 
 #### Raw data files that should not be read by default
 
 These are examples of files agents should not open unless the user explicitly directs it:
 
-* `Data/Niche_NYU_202604/college_data.txt`
-* `Data/Niche_NYU_202604/college_reviews.txt`
-* `Data/Niche_NYU_202604/k12_school_data_2019.txt` through `k12_school_data_2026.txt`
-* `Data/Niche_NYU_202604/k12_school_district_data.txt`
-* `Data/Niche_NYU_202604/k12_school_district_reviews.txt`
-* `Data/Niche_NYU_202604/k12_school_reviews.txt`
-* `Data/SEDA/edu_opportunity/seda_*.csv`
-* `Data/Social Capital Data/social_capital_high_school.csv`
-* `Data/Social Capital Data/crosswalks/*.csv`
+- `Data/Niche_NYU_202604/college_data.txt`
+- `Data/Niche_NYU_202604/college_reviews.txt`
+- `Data/Niche_NYU_202604/k12_school_data_2019.txt` through `k12_school_data_2026.txt`
+- `Data/Niche_NYU_202604/k12_school_district_data.txt`
+- `Data/Niche_NYU_202604/k12_school_district_reviews.txt`
+- `Data/Niche_NYU_202604/k12_school_reviews.txt`
+- `Data/SEDA/edu_opportunity/seda_*.csv`
+- `Data/Social Capital Data/social_capital_high_school.csv`
+- `Data/Social Capital Data/crosswalks/*.csv`
 
 ### Output Conventions
 
 The project's derived outputs are exposed through the top-level `Output` symlink:
 
-* `Output` -> `/Users/ayushkumar/Dropbox/Social Capital (Niche Data)/Output`
+- `Output` -> `/Users/ayushkumar/Dropbox/Social Capital (Niche Data)/Output`
 
 Agents should place generated artifacts in `Output`, not in the repository itself.
 
