@@ -9,6 +9,7 @@ wheels/
 # Virtual environments
 .venv
 docs
+data
 
 
 # Auxillary latex files
