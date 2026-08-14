@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["profile_id", "name", "attributes", "rendered_profile", "revision"],
+  "properties": {
+    "profile_id": {"type": "string", "pattern": "^P[0-9]{3}$"},
+    "name": {"type": "string", "minLength": 1},
+    "attributes": {"type": "object", "required": ["age", "age_band", "gender", "pronouns", "religion", "education", "occupation", "response_preferences"]},
+    "rendered_profile": {"type": "string", "minLength": 1},
+    "revision": {"type": "integer", "minimum": 1}
+  },
+  "additionalProperties": true
+}

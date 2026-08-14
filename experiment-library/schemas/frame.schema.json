@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["frame_id", "name", "description", "relationship_type", "assistant_role", "developer_instruction_required", "profile_slots", "forbidden_topics", "revision"],
+  "properties": {
+    "frame_id": {"type": "string", "pattern": "^F[0-9]{2}$"},
+    "name": {"type": "string"},
+    "description": {"type": "string"},
+    "relationship_type": {"type": "string"},
+    "assistant_role": {"type": "string"},
+    "developer_instruction_required": {"type": "boolean"},
+    "profile_slots": {"type": "array", "items": {"type": "string"}},
+    "forbidden_topics": {"type": "array", "items": {"type": "string"}},
+    "revision": {"type": "integer", "minimum": 1}
+  },
+  "additionalProperties": true
+}

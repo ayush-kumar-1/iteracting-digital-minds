@@ -1,0 +1,16 @@
+{
+  "default_language": "en",
+  "generation_prompt_version": "v1",
+  "generation_timestamp": "2026-08-14",
+  "generator_model": "human-authored pilot specification",
+  "language": "en",
+  "languages": {
+    "en": {
+      "revision": 1,
+      "status": "frozen_source"
+    }
+  },
+  "library_version": "0.1.0",
+  "revision": 1,
+  "translation_status": "source_frozen"
+}
