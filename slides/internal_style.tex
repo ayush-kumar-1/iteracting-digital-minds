@@ -1,0 +1,185 @@
+\usetheme{default}
+\usecolortheme{default}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{blocks}[default]
+
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usetikzlibrary{arrows.meta,calc,decorations.pathreplacing,matrix,overlay-beamer-styles,shapes.geometric}
+
+\definecolor{DeckInk}{HTML}{181A25}
+\definecolor{DeckAccent}{HTML}{A44A2F}
+\definecolor{DeckMuted}{HTML}{4F846A}
+\definecolor{DeckBg}{HTML}{FEFFFD}
+\colorlet{DeckRule}{DeckAccent}
+\definecolor{DeckBlue}{HTML}{4172A0}
+\colorlet{QuoteBoxBg}{DeckMuted!14!DeckBg}
+\colorlet{PromptBoxBg}{DeckBlue!16!DeckBg}
+\definecolor{DeckBrightGreen}{HTML}{4F846A}
+
+\setbeamercolor{background canvas}{bg=DeckBg}
+\setbeamercolor{normal text}{fg=DeckInk,bg=DeckBg}
+\setbeamercolor{structure}{fg=DeckAccent}
+\setbeamercolor{title}{fg=DeckInk}
+\setbeamercolor{subtitle}{fg=DeckMuted}
+\setbeamercolor{frametitle}{fg=DeckInk,bg=DeckBg}
+\setbeamercolor{framesubtitle}{fg=DeckMuted}
+\setbeamercolor{footline}{fg=DeckMuted,bg=DeckBg}
+\setbeamercolor{itemize item}{fg=DeckAccent}
+\setbeamercolor{itemize subitem}{fg=DeckAccent}
+\setbeamercolor{section title}{fg=DeckInk}
+\setbeamercolor{block title}{fg=DeckInk,bg=}
+\setbeamercolor{block body}{fg=DeckInk,bg=}
+
+\setbeamerfont{title}{family=\rmfamily,series=\bfseries,size=\fontsize{26}{29}\selectfont}
+\setbeamerfont{subtitle}{family=\sffamily,series=\mdseries,size=\normalsize}
+\setbeamerfont{frametitle}{family=\rmfamily,series=\bfseries,size=\fontsize{17}{19}\selectfont}
+\setbeamerfont{framesubtitle}{family=\sffamily,series=\mdseries,size=\small}
+\setbeamerfont{section title}{family=\rmfamily,series=\bfseries,size=\fontsize{30}{32}\selectfont}
+\setbeamerfont{author}{family=\sffamily,series=\mdseries,size=\small}
+\setbeamerfont{institute}{family=\sffamily,series=\mdseries,size=\small}
+\setbeamerfont{date}{family=\sffamily,series=\mdseries,size=\small}
+\setbeamerfont{normal text}{family=\sffamily,size=\normalsize}
+\setbeamerfont{footline}{family=\sffamily,size=\fontsize{11}{12}\selectfont}
+\setbeamerfont{block title}{family=\rmfamily,series=\bfseries}
+\setbeamerfont{block body}{family=\sffamily}
+
+\setbeamersize{text margin left=9mm,text margin right=12mm}
+
+\newlength{\deckframetitlerulewidth}
+\newcommand{\deckframeinsetx}{3.5mm}
+\newcommand{\deckframeinsety}{3.5mm}
+\newcommand{\greyout}[1]{{\color{DeckMuted!75!DeckBg}#1}}
+\newcommand{\textiron}[1]{{\color{DeckAccent}#1}}
+\newcommand{\textgreenhl}[1]{{\color{DeckBrightGreen}#1}}
+\AtEveryCitekey{\color{DeckAccent}}
+
+\setbeamertemplate{background}{
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[DeckBg] (current page.south west) rectangle (current page.north east);
+    \draw[
+      DeckInk,
+      line width=0.7pt,
+      rounded corners=14pt
+    ]
+      ([xshift=\deckframeinsetx,yshift=\deckframeinsety]current page.south west)
+      rectangle
+      ([xshift=-\deckframeinsetx,yshift=-\deckframeinsety]current page.north east);
+  \end{tikzpicture}
+}
+
+\setbeamertemplate{frametitle}{
+  \vspace*{0.54cm}
+  \settowidth{\deckframetitlerulewidth}{{\usebeamerfont{frametitle}\insertframetitle}}
+  \noindent
+  {\usebeamerfont{frametitle}\usebeamercolor[fg]{frametitle}\insertframetitle\hfill
+    \usebeamerfont{footline}\usebeamercolor[fg]{frametitle}\insertframenumber\par}
+  \ifx\insertframesubtitle\@empty
+  \else
+    \vspace{0.06cm}
+    {\usebeamerfont{framesubtitle}\usebeamercolor[fg]{framesubtitle}\insertframesubtitle\par}
+  \fi
+  \vspace{-0.22cm}
+  {\color{DeckRule}\rule{\deckframetitlerulewidth}{0.65pt}}
+  \vspace{0.08cm}
+}
+
+\setbeamertemplate{title page}{
+  \begin{tikzpicture}[remember picture,overlay]
+    \node[
+      anchor=west,
+      text width=0.82\paperwidth,
+      align=left
+    ] at ([xshift=13mm,yshift=1mm]current page.west) {%
+      {\usebeamerfont{title}\usebeamercolor[fg]{title}\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\inserttitle\par}
+      \vspace{0.42cm}
+      {\color{DeckAccent}\rule{0.20\linewidth}{1.1pt}\par}
+    };
+    \node[
+      anchor=north east,
+      fill=DeckInk,
+      text=DeckBg,
+      rounded corners=8pt,
+      inner xsep=10pt,
+      inner ysep=5pt,
+      font=\sffamily\fontsize{9}{10}\selectfont
+    ] at ([xshift=-14mm,yshift=-10mm]current page.north east) {\insertshortdate};
+    \node[
+      anchor=south east,
+      text width=0.28\paperwidth,
+      align=right
+    ] at ([xshift=-16mm,yshift=10mm]current page.south east) {%
+      {\usebeamerfont{author}\usebeamercolor[fg]{normal text}\raggedleft\insertauthor\par}
+      {\usebeamerfont{author}\usebeamercolor[fg]{normal text}\raggedleft\insertinstitute\par}
+      {\usebeamerfont{author}\usebeamercolor[fg]{normal text}\fontsize{9}{10}\selectfont\raggedleft\presentationemail\par}
+    };
+  \end{tikzpicture}
+}
+
+\setbeamertemplate{footline}{
+  \ifnum\value{framenumber}=1
+  \else
+  \fi
+}
+
+\setbeamertemplate{itemize item}{\raisebox{0.1ex}{\scriptsize\textbullet}}
+\setbeamertemplate{itemize subitem}{\raisebox{0.1ex}{\tiny\textbullet}}
+
+\newenvironment{quotebox}[1]
+{%
+  \def\quoteboxcitation{#1}%
+  \par\smallskip
+  \noindent
+  \begin{tcolorbox}[
+    enhanced,
+    colback=QuoteBoxBg,
+    colframe=DeckInk,
+    boxrule=0.7pt,
+    arc=10pt,
+    width=\textwidth,
+    left=12pt,
+    right=12pt,
+    top=10pt,
+    bottom=10pt,
+    boxsep=0pt,
+    before skip=0pt,
+    after skip=0pt
+  ]
+    \raggedright
+    \small
+    ``%
+}
+{%
+    ''\par
+    \vspace{0.6em}
+    {\raggedleft\normalfont\small\quoteboxcitation\par}
+  \end{tcolorbox}
+  \par\smallskip
+}
+
+\newenvironment{promptbox}
+{%
+  \noindent
+  \begin{tcolorbox}[
+    enhanced,
+    colback=PromptBoxBg,
+    colframe=DeckInk,
+    boxrule=0.7pt,
+    arc=10pt,
+    width=\linewidth,
+    left=6pt,
+    right=6pt,
+    top=5pt,
+    bottom=5pt,
+    boxsep=0pt,
+    before skip=0pt,
+    after skip=0pt
+  ]
+    \raggedright
+    \ttfamily
+    \fontsize{6.6}{7.4}\selectfont
+}
+{%
+  \end{tcolorbox}
+}

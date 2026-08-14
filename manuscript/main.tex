@@ -1,0 +1,187 @@
+\documentclass[12pt]{article}
+
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{fontspec}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{etoolbox}
+\usepackage[most]{tcolorbox}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\usepackage[round,authoryear]{natbib}
+
+\IfFontExistsTF{Old Standard TT}
+  {%
+    \setmainfont{Old Standard TT}[
+      BoldFont = {Old Standard TT Bold},
+      ItalicFont = {Old Standard TT Italic},
+      BoldItalicFont = {Old Standard TT Bold},
+      BoldItalicFeatures = {FakeSlant = 0.16}
+    ]%
+  }
+  {%
+    \PackageWarningNoLine{manuscript}{Old Standard TT was not found; using Latin Modern Roman}%
+    \setmainfont{Latin Modern Roman}%
+  }
+
+\definecolor{RuleBlack}{HTML}{050505}
+\definecolor{GuideBox}{HTML}{FFF4CC}
+\definecolor{PromptBoxBg}{HTML}{F4F0E8}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\setlist[enumerate]{topsep=0.2em,itemsep=0.1em,leftmargin=2.5em}
+\setlist[itemize]{topsep=0.2em,itemsep=0.1em,leftmargin=2.2em}
+
+\newcommand{\projecttitle}{PROJECT TITLE}
+\newcommand{\sprintnote}{Research conducted at the \href{https://www.apartresearch.com/event/digital-minds-research-sprint}{Digital Minds Research Sprint}, August 2026}
+\newcommand{\authoremail}{\href{mailto:ayush.kumar@northwestern.edu}{ayush.kumar@northwestern.edu}}
+
+\newcommand{\authorblock}[2]{%
+  \begin{tabular}[t]{c}
+    #1\\
+    #2
+  \end{tabular}%
+}
+
+\newenvironment{guidancebox}
+{%
+  \begin{tcolorbox}[
+    colback=GuideBox,
+    colframe=RuleBlack,
+    boxrule=0.6pt,
+    arc=0pt,
+    left=6pt,
+    right=6pt,
+    top=7pt,
+    bottom=7pt,
+    boxsep=0pt
+  ]
+  \sffamily
+  \raggedright
+}
+{%
+  \end{tcolorbox}
+}
+
+\NewTCBListing{promptbox}{ !O{} }{%
+  enhanced,
+  listing only,
+  breakable,
+  colback=PromptBoxBg,
+  colframe=RuleBlack,
+  boxrule=0.6pt,
+  arc=0pt,
+  left=8pt,
+  right=8pt,
+  top=7pt,
+  bottom=7pt,
+  boxsep=0pt,
+  listing options={
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    columns=fullflexible,
+    keepspaces=true,
+    showstringspaces=false
+  },
+  #1
+}
+
+\newcommand{\makemanuscripttitle}{%
+  \begin{center}
+  \vspace*{-0.42in}
+  \makebox[\textwidth][l]{\rule{0.32em}{0.65em}}\par
+  \vspace{-0.2em}
+  \rule{\textwidth}{1.7pt}\par
+  \vspace{2.0em}
+  {\LARGE\bfseries \projecttitle\textsuperscript{1}\par}
+  \vspace{0.9em}
+  \rule{\textwidth}{0.5pt}\par
+  \vspace{1.0em}
+  \begin{tabular}{ccc}
+    \authorblock{Ayush Kumar\footnotemark[2]}{\small Northwestern University, Department of Economics} &
+  \end{tabular}
+  \\[1.2em]
+  \textbf{With}\\
+  Apart Research
+  \vspace{1.1em}
+  \end{center}
+}
+
+\begin{document}
+
+\makemanuscripttitle
+
+\begin{abstract}
+\itshape
+Summarize your project in 150--250 words. A strong abstract lets a reviewer understand what you did and why it matters without reading anything else. Make sure to cover: the problem, your approach, key results, and the main takeaway. Polish it last: the abstract should reflect your final results, not your initial plan.
+\end{abstract}
+
+\begin{guidancebox}
+\textbf{How to use this template:} Replace the italicized guidance text under each section with your content. The section structure is strong guidance but not rigid. If your project requires a different organization, feel free to adapt. \underline{Delete all guidance text including this info box before submitting.} Make sure the project title and author information above are up to date.
+
+\textbf{How your submission will be evaluated:} Your project will be judged on the quality of this written report. To understand what we look for, see our \href{https://www.apartresearch.com/}{Evaluation Rubric}.
+
+\textbf{Recommended length:} 4 pages excluding references and appendix. Rough guide: Intro \& Related Work 1p, Methods and Results: 2.5p, Discussion 0.5p.
+\end{guidancebox}
+\footnotetext[1]{\sprintnote}
+\footnotetext[2]{\authoremail}
+
+\section{Introduction}
+
+\emph{What problem are you addressing and why does it matter? Connect it to your work: we want to know why your work is practically valuable.}
+
+\emph{Provide enough background for readers to understand your work. If relevant, briefly describe the threat model or failure mode you're addressing; reference prior work that motivates why it is worth addressing, or explain it yourself.}
+
+\emph{Aspire to clearly list your most important contributions that go beyond what exists today.}
+\textbf{Our main contributions are:}
+
+\begin{enumerate}
+  \item \emph{[First contribution -- what new thing did you create, discover, or demonstrate?]}
+  \item \emph{[Second contribution]}
+  \item \emph{[Third contribution, if applicable]}
+\end{enumerate}
+
+\section{Related Work}
+
+\section{Methods}
+
+\emph{Explain what you built, measured, or tested. Include enough implementation detail for readers to understand the core design decisions, and show the evidence that supports your claims.}
+
+\begin{promptbox}
+Paste prompts here exactly as used.
+
+Example:
+You are evaluating a model response for factual accuracy and robustness.
+\end{promptbox}
+
+\section{Results}
+
+\section{Discussion}
+
+\textbf{Limitations}
+
+\textbf{Future Work}
+
+\section{Conclusion}
+
+\textbf{Code and Data}
+
+
+
+\emph{Summarize what the results mean, what limitations remain, and what future work would most improve the project.}
+
+Use author-year citations with natbib, such as \citet{brown2020language} for narrative citations or \citep{brown2020language} for parenthetical citations.
+
+\newpage
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\newpage
+
+\appendix
+
+\end{document}
