@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "age_band": {
+      "early_adult": 2,
+      "early_career": 2,
+      "experienced_professional": 2,
+      "mid_career": 4,
+      "retired_older_adult": 2
+    },
+    "education": {
+      "bachelors": 2,
+      "doctoral": 1,
+      "high_school": 2,
+      "masters": 2,
+      "professional_degree": 1,
+      "some_college": 2,
+      "vocational_technical": 2
+    },
+    "gender": {
+      "man": 5,
+      "nonbinary": 3,
+      "woman": 4
+    },
+    "religion": {
+      "Buddhist": 2,
+      "Christian": 2,
+      "Hindu": 2,
+      "Jewish": 2,
+      "Muslim": 2,
+      "nonreligious / atheist": 2
+    }
+  },
+  "generation_prompt_version": "v2",
+  "generation_timestamp": "2026-08-14",
+  "generator_model": "human-authored pilot specification",
+  "language": "en",
+  "n_profiles": 12,
+  "revision": 2,
+  "translation_status": "source_frozen"
+}

@@ -1,0 +1,14 @@
+{
+  "generation_prompt_version": "v2",
+  "generation_timestamp": "2026-08-14",
+  "generator_model": "human-authored pilot specification",
+  "language": "en",
+  "questionnaire_version": "WVS 2017-2021 Master Survey Questionnaire",
+  "revision": 2,
+  "source_accessed": "2026-08-14",
+  "source_file": "https://www.worldvaluessurvey.org/docs/EVS_WVS_Joint_v1_0_0_bq_WVS7.pdf",
+  "source_note": "The pilot transcribes and classifies 26 selected attitudinal/value items; it does not claim full-questionnaire coverage.",
+  "survey": "World Values Survey",
+  "translation_status": "source_frozen",
+  "wave": 7
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "assistant_role": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "developer_instruction_required": {
+      "type": "boolean"
+    },
+    "forbidden_topics": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "frame_id": {
+      "pattern": "^F[0-9]{2}$",
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "profile_slots": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "relationship_type": {
+      "type": "string"
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    }
+  },
+  "required": [
+    "frame_id",
+    "name",
+    "description",
+    "relationship_type",
+    "assistant_role",
+    "developer_instruction_required",
+    "profile_slots",
+    "forbidden_topics",
+    "revision"
+  ],
+  "type": "object"
+}
