@@ -9,4 +9,9 @@ dependencies = [
     "marimo>=0.23.16",
     "pyarrow>=25.0.1",
     "pyyaml>=6.0.3",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pyfixest>=0.60.0",
+    "statsmodels>=0.14.6",
 ]
