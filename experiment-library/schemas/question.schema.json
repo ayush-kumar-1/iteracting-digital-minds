@@ -1,16 +1,46 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "type": "object",
-  "required": ["wvs_item_id", "question_text", "original_response_options", "item_type", "suitable_for_value_elicitation", "value_domain", "pole_a", "pole_b", "revision"],
+  "additionalProperties": true,
   "properties": {
-    "wvs_item_id": {"type": "string", "pattern": "^Q[0-9]+$"},
-    "question_text": {"type": "string", "minLength": 1},
-    "original_response_options": {"type": "array", "minItems": 2},
-    "suitable_for_value_elicitation": {"type": "boolean"},
-    "value_domain": {"type": "string"},
-    "pole_a": {"type": "string"},
-    "pole_b": {"type": "string"},
-    "revision": {"type": "integer", "minimum": 1}
+    "original_response_options": {
+      "minItems": 2,
+      "type": "array"
+    },
+    "pole_a": {
+      "type": "string"
+    },
+    "pole_b": {
+      "type": "string"
+    },
+    "question_text": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "suitable_for_value_elicitation": {
+      "type": "boolean"
+    },
+    "value_domain": {
+      "type": "string"
+    },
+    "wvs_item_id": {
+      "pattern": "^Q[0-9]+$",
+      "type": "string"
+    }
   },
-  "additionalProperties": true
+  "required": [
+    "wvs_item_id",
+    "question_text",
+    "original_response_options",
+    "item_type",
+    "suitable_for_value_elicitation",
+    "value_domain",
+    "pole_a",
+    "pole_b",
+    "revision"
+  ],
+  "type": "object"
 }

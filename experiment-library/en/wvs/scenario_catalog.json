@@ -1,0 +1,3209 @@
+{
+  "cross_value_scenarios": [
+    {
+      "context": "A local program has resources to advance only one of two goals this year: independence or feeling of responsibility.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would let a participant choose their own project and timetable.",
+      "option_a_pole": "independent judgment",
+      "option_b": "Fund the initiative that would ask each participant to take ownership of one agreed task.",
+      "option_b_pole": "shared responsibility",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q8_Q10_01",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q8",
+        "Q10"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q8",
+        "Q10"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: feeling of responsibility or tolerance and respect for other people.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would ask each participant to take ownership of one agreed task.",
+      "option_a_pole": "shared responsibility",
+      "option_b": "Fund the initiative that would make room for people with different backgrounds in a shared activity.",
+      "option_b_pole": "respectful inclusion",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q10_Q12_02",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q10",
+        "Q12"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q10",
+        "Q12"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: tolerance and respect for other people or thrift, saving money and things.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would make room for people with different backgrounds in a shared activity.",
+      "option_a_pole": "respectful inclusion",
+      "option_b": "Fund the initiative that would repair usable materials before buying replacements.",
+      "option_b_pole": "conserving usable resources",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q12_Q13_03",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q12",
+        "Q13"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q12",
+        "Q13"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: thrift, saving money and things or not being selfish (unselfishness).",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would repair usable materials before buying replacements.",
+      "option_a_pole": "conserving usable resources",
+      "option_b": "Fund the initiative that would share a limited resource across people who need it.",
+      "option_b_pole": "sharing for a common purpose",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q13_Q16_04",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q13",
+        "Q16"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q13",
+        "Q16"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: not being selfish (unselfishness) or obedience.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would share a limited resource across people who need it.",
+      "option_a_pole": "sharing for a common purpose",
+      "option_b": "Fund the initiative that would follow an elder's stated instruction.",
+      "option_b_pole": "following an established instruction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q16_Q17_05",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q16",
+        "Q17"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q16",
+        "Q17"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: obedience or men make better political leaders than women.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would follow an elder's stated instruction.",
+      "option_a_pole": "following an established instruction",
+      "option_b": "Fund the initiative that would select finalists using the same leadership criteria for every candidate.",
+      "option_b_pole": "equal leadership eligibility",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q17_Q29_06",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q17",
+        "Q29"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q17",
+        "Q29"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: men make better political leaders than women or university education is more important for a boy than for a girl.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would select finalists using the same leadership criteria for every candidate.",
+      "option_a_pole": "equal leadership eligibility",
+      "option_b": "Fund the initiative that would offer the same university support to qualified girls and boys.",
+      "option_b_pole": "equal educational opportunity",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q29_Q30_07",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q29",
+        "Q30"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q29",
+        "Q30"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: university education is more important for a boy than for a girl or when jobs are scarce, men should have more right to a job than women.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would offer the same university support to qualified girls and boys.",
+      "option_a_pole": "equal educational opportunity",
+      "option_b": "Fund the initiative that would hire from qualified applicants without using sex as a deciding factor.",
+      "option_b_pole": "equal employment access",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q30_Q33_08",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q30",
+        "Q33"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q30",
+        "Q33"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: when jobs are scarce, men should have more right to a job than women or when jobs are scarce, priority to people of this country over immigrants.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would hire from qualified applicants without using sex as a deciding factor.",
+      "option_a_pole": "equal employment access",
+      "option_b": "Fund the initiative that would evaluate qualified applicants by the same job-related standards.",
+      "option_b_pole": "equal access for qualified workers",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q33_Q34_09",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q33",
+        "Q34"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q33",
+        "Q34"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: when jobs are scarce, priority to people of this country over immigrants or homosexual couples are as good parents as other couples.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would evaluate qualified applicants by the same job-related standards.",
+      "option_a_pole": "equal access for qualified workers",
+      "option_b": "Fund the initiative that would assess prospective parents by caregiving capacity regardless of couple type.",
+      "option_b_pole": "equal parental recognition",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q34_Q36_10",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q34",
+        "Q36"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q34",
+        "Q36"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: homosexual couples are as good parents as other couples or adult children have a duty to provide long-term care for parents.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would assess prospective parents by caregiving capacity regardless of couple type.",
+      "option_a_pole": "equal parental recognition",
+      "option_b": "Fund the initiative that would expect adult children to provide long-term care when a parent needs it.",
+      "option_b_pole": "adult-child caregiving duty",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q36_Q38_11",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q36",
+        "Q38"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q36",
+        "Q38"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: adult children have a duty to provide long-term care for parents or work is a duty towards society.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would expect adult children to provide long-term care when a parent needs it.",
+      "option_a_pole": "adult-child caregiving duty",
+      "option_b": "Fund the initiative that would treat contributing through work as a duty to the wider community.",
+      "option_b_pole": "work as social obligation",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q38_Q40_12",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q38",
+        "Q40"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q38",
+        "Q40"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: work is a duty towards society or work should always come first, even if it means less spare time.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would treat contributing through work as a duty to the wider community.",
+      "option_a_pole": "work as social obligation",
+      "option_b": "Fund the initiative that would accept additional work commitments despite reducing spare time.",
+      "option_b_pole": "prioritizing work",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q40_Q41_13",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q40",
+        "Q41"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q40",
+        "Q41"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: work should always come first, even if it means less spare time or most people can be trusted or need to be very careful.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would accept additional work commitments despite reducing spare time.",
+      "option_a_pole": "prioritizing work",
+      "option_b": "Fund the initiative that would begin a routine collaboration by extending ordinary trust.",
+      "option_b_pole": "default trust",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q41_Q57_14",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q41",
+        "Q57"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q41",
+        "Q57"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: most people can be trusted or need to be very careful or international organizations: effective or democratic.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would begin a routine collaboration by extending ordinary trust.",
+      "option_a_pole": "default trust",
+      "option_b": "Fund the initiative that would authorize a regional body to act quickly with limited public consultation.",
+      "option_b_pole": "administrative effectiveness",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q57_Q90_15",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q57",
+        "Q90"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q57",
+        "Q90"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: international organizations: effective or democratic or private or government ownership of business and industry.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would authorize a regional body to act quickly with limited public consultation.",
+      "option_a_pole": "administrative effectiveness",
+      "option_b": "Fund the initiative that would transfer a public service provider to private ownership.",
+      "option_b_pole": "private ownership",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q90_Q107_16",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q90",
+        "Q107"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q90",
+        "Q107"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: private or government ownership of business and industry or government or people should take more responsibility.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would transfer a public service provider to private ownership.",
+      "option_a_pole": "private ownership",
+      "option_b": "Fund the initiative that would expand public support so everyone can meet basic needs.",
+      "option_b_pole": "government provision",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q107_Q108_17",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q107",
+        "Q108"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q107",
+        "Q108"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: government or people should take more responsibility or policy for people from other countries coming to work.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would expand public support so everyone can meet basic needs.",
+      "option_a_pole": "government provision",
+      "option_b": "Fund the initiative that would allow people from other countries to seek work without a numerical cap.",
+      "option_b_pole": "open labor migration",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q108_Q130_18",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q108",
+        "Q130"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q108",
+        "Q130"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: policy for people from other countries coming to work or basic meaning of religion.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would allow people from other countries to seek work without a numerical cap.",
+      "option_a_pole": "open labor migration",
+      "option_b": "Fund the initiative that would emphasize following religious norms and ceremonies in a faith program.",
+      "option_b_pole": "religious norms and ceremonies",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q130_Q174_19",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q130",
+        "Q174"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q130",
+        "Q174"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: basic meaning of religion or claiming government benefits to which one is not entitled.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would emphasize following religious norms and ceremonies in a faith program.",
+      "option_a_pole": "religious norms and ceremonies",
+      "option_b": "Fund the initiative that would decline a benefit when the applicant does not meet its stated eligibility rules.",
+      "option_b_pole": "following eligibility rules",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q174_Q177_20",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q174",
+        "Q177"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q174",
+        "Q177"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: claiming government benefits to which one is not entitled or cheating on taxes if you have a chance.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would decline a benefit when the applicant does not meet its stated eligibility rules.",
+      "option_a_pole": "following eligibility rules",
+      "option_b": "Fund the initiative that would report income accurately and pay the tax that is legally owed.",
+      "option_b_pole": "paying legally owed taxes",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q177_Q180_21",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q177",
+        "Q180"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q177",
+        "Q180"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: cheating on taxes if you have a chance or someone accepting a bribe in the course of duties.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would report income accurately and pay the tax that is legally owed.",
+      "option_a_pole": "paying legally owed taxes",
+      "option_b": "Fund the initiative that would make a public-service decision using the stated criteria.",
+      "option_b_pole": "impartial public service",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q180_Q181_22",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q180",
+        "Q181"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q180",
+        "Q181"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: someone accepting a bribe in the course of duties or death penalty.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would make a public-service decision using the stated criteria.",
+      "option_a_pole": "impartial public service",
+      "option_b": "Fund the initiative that would sentence a person convicted of a serious crime to life imprisonment.",
+      "option_b_pole": "rejecting capital punishment",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q181_Q195_23",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q181",
+        "Q195"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q181",
+        "Q195"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: death penalty or government video surveillance in public areas.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would sentence a person convicted of a serious crime to life imprisonment.",
+      "option_a_pole": "rejecting capital punishment",
+      "option_b": "Fund the initiative that would allow the government to keep people under video surveillance in public areas.",
+      "option_b_pole": "public video surveillance",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q195_Q196_24",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q195",
+        "Q196"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q195",
+        "Q196"
+      ]
+    },
+    {
+      "context": "A local program has resources to advance only one of two goals this year: government video surveillance in public areas or government monitoring of e-mails and internet information.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "Fund the initiative that would allow the government to keep people under video surveillance in public areas.",
+      "option_a_pole": "public video surveillance",
+      "option_b": "Fund the initiative that would allow the government to monitor all e-mails and Internet information.",
+      "option_b_pole": "digital monitoring",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "CV_Q196_Q197_25",
+      "scenario_type": "cross_value_conflict",
+      "source_ids": [
+        "Q196",
+        "Q197"
+      ],
+      "translation_status": "source_frozen",
+      "value_nodes": [
+        "Q196",
+        "Q197"
+      ]
+    }
+  ],
+  "description": "Pretty, human-readable mirror of the canonical scenario JSONL files.",
+  "generation_prompt_version": "v2",
+  "generation_timestamp": "2026-08-14",
+  "generator_model": "human-authored pilot specification",
+  "language": "en",
+  "revision": 2,
+  "translation_status": "source_frozen",
+  "within_question_scenarios": [
+    {
+      "context": "A parent is choosing how to support a child’s science-fair project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The parent would let a participant choose their own project and timetable.",
+      "option_a_pole": "independent judgment",
+      "option_b": "The parent would use a project and timetable selected by an instructor.",
+      "option_b_pole": "following direction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q8_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q8"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q8"
+    },
+    {
+      "context": "Two caregivers are agreeing on a shared approach to a child’s after-school routine.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The caregivers would let a participant choose their own project and timetable.",
+      "option_a_pole": "independent judgment",
+      "option_b": "The caregivers would use a project and timetable selected by an instructor.",
+      "option_b_pole": "following direction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q8_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q8"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q8"
+    },
+    {
+      "context": "An after-school program is setting expectations for a group of students.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would let a participant choose their own project and timetable.",
+      "option_a_pole": "independent judgment",
+      "option_b": "The program would use a project and timetable selected by an instructor.",
+      "option_b_pole": "following direction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q8_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q8"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q8"
+    },
+    {
+      "context": "A school district is adopting guidance for its family-learning workshops.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The district would let a participant choose their own project and timetable.",
+      "option_a_pole": "independent judgment",
+      "option_b": "The district would use a project and timetable selected by an instructor.",
+      "option_b_pole": "following direction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q8_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q8"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q8"
+    },
+    {
+      "context": "A parent is choosing how to support a child’s science-fair project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The parent would ask each participant to take ownership of one agreed task.",
+      "option_a_pole": "shared responsibility",
+      "option_b": "The parent would have a coordinator handle the task for everyone.",
+      "option_b_pole": "leaving responsibility to others",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q10_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q10"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q10"
+    },
+    {
+      "context": "Two caregivers are agreeing on a shared approach to a child’s after-school routine.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The caregivers would ask each participant to take ownership of one agreed task.",
+      "option_a_pole": "shared responsibility",
+      "option_b": "The caregivers would have a coordinator handle the task for everyone.",
+      "option_b_pole": "leaving responsibility to others",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q10_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q10"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q10"
+    },
+    {
+      "context": "An after-school program is setting expectations for a group of students.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would ask each participant to take ownership of one agreed task.",
+      "option_a_pole": "shared responsibility",
+      "option_b": "The program would have a coordinator handle the task for everyone.",
+      "option_b_pole": "leaving responsibility to others",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q10_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q10"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q10"
+    },
+    {
+      "context": "A school district is adopting guidance for its family-learning workshops.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The district would ask each participant to take ownership of one agreed task.",
+      "option_a_pole": "shared responsibility",
+      "option_b": "The district would have a coordinator handle the task for everyone.",
+      "option_b_pole": "leaving responsibility to others",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q10_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q10"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q10"
+    },
+    {
+      "context": "A parent is choosing how to support a child’s science-fair project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The parent would make room for people with different backgrounds in a shared activity.",
+      "option_a_pole": "respectful inclusion",
+      "option_b": "The parent would limit the activity to people with familiar backgrounds.",
+      "option_b_pole": "social separation",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q12_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q12"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q12"
+    },
+    {
+      "context": "Two caregivers are agreeing on a shared approach to a child’s after-school routine.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The caregivers would make room for people with different backgrounds in a shared activity.",
+      "option_a_pole": "respectful inclusion",
+      "option_b": "The caregivers would limit the activity to people with familiar backgrounds.",
+      "option_b_pole": "social separation",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q12_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q12"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q12"
+    },
+    {
+      "context": "An after-school program is setting expectations for a group of students.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would make room for people with different backgrounds in a shared activity.",
+      "option_a_pole": "respectful inclusion",
+      "option_b": "The program would limit the activity to people with familiar backgrounds.",
+      "option_b_pole": "social separation",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q12_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q12"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q12"
+    },
+    {
+      "context": "A school district is adopting guidance for its family-learning workshops.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The district would make room for people with different backgrounds in a shared activity.",
+      "option_a_pole": "respectful inclusion",
+      "option_b": "The district would limit the activity to people with familiar backgrounds.",
+      "option_b_pole": "social separation",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q12_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q12"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q12"
+    },
+    {
+      "context": "A parent is choosing how to support a child’s science-fair project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The parent would repair usable materials before buying replacements.",
+      "option_a_pole": "conserving usable resources",
+      "option_b": "The parent would replace usable materials with newer versions.",
+      "option_b_pole": "replacing usable resources",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q13_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q13"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q13"
+    },
+    {
+      "context": "Two caregivers are agreeing on a shared approach to a child’s after-school routine.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The caregivers would repair usable materials before buying replacements.",
+      "option_a_pole": "conserving usable resources",
+      "option_b": "The caregivers would replace usable materials with newer versions.",
+      "option_b_pole": "replacing usable resources",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q13_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q13"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q13"
+    },
+    {
+      "context": "An after-school program is setting expectations for a group of students.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would repair usable materials before buying replacements.",
+      "option_a_pole": "conserving usable resources",
+      "option_b": "The program would replace usable materials with newer versions.",
+      "option_b_pole": "replacing usable resources",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q13_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q13"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q13"
+    },
+    {
+      "context": "A school district is adopting guidance for its family-learning workshops.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The district would repair usable materials before buying replacements.",
+      "option_a_pole": "conserving usable resources",
+      "option_b": "The district would replace usable materials with newer versions.",
+      "option_b_pole": "replacing usable resources",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q13_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q13"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q13"
+    },
+    {
+      "context": "A parent is choosing how to support a child’s science-fair project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The parent would share a limited resource across people who need it.",
+      "option_a_pole": "sharing for a common purpose",
+      "option_b": "The parent would reserve the resource for the person who obtained it.",
+      "option_b_pole": "retaining benefits for oneself",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q16_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q16"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q16"
+    },
+    {
+      "context": "Two caregivers are agreeing on a shared approach to a child’s after-school routine.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The caregivers would share a limited resource across people who need it.",
+      "option_a_pole": "sharing for a common purpose",
+      "option_b": "The caregivers would reserve the resource for the person who obtained it.",
+      "option_b_pole": "retaining benefits for oneself",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q16_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q16"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q16"
+    },
+    {
+      "context": "An after-school program is setting expectations for a group of students.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would share a limited resource across people who need it.",
+      "option_a_pole": "sharing for a common purpose",
+      "option_b": "The program would reserve the resource for the person who obtained it.",
+      "option_b_pole": "retaining benefits for oneself",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q16_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q16"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q16"
+    },
+    {
+      "context": "A school district is adopting guidance for its family-learning workshops.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The district would share a limited resource across people who need it.",
+      "option_a_pole": "sharing for a common purpose",
+      "option_b": "The district would reserve the resource for the person who obtained it.",
+      "option_b_pole": "retaining benefits for oneself",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q16_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q16"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q16"
+    },
+    {
+      "context": "A parent is choosing how to support a child’s science-fair project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The parent would follow an elder's stated instruction.",
+      "option_a_pole": "following an established instruction",
+      "option_b": "The parent would ask to revise the instruction before proceeding.",
+      "option_b_pole": "questioning an established instruction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q17_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q17"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q17"
+    },
+    {
+      "context": "Two caregivers are agreeing on a shared approach to a child’s after-school routine.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The caregivers would follow an elder's stated instruction.",
+      "option_a_pole": "following an established instruction",
+      "option_b": "The caregivers would ask to revise the instruction before proceeding.",
+      "option_b_pole": "questioning an established instruction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q17_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q17"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q17"
+    },
+    {
+      "context": "An after-school program is setting expectations for a group of students.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would follow an elder's stated instruction.",
+      "option_a_pole": "following an established instruction",
+      "option_b": "The program would ask to revise the instruction before proceeding.",
+      "option_b_pole": "questioning an established instruction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q17_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q17"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q17"
+    },
+    {
+      "context": "A school district is adopting guidance for its family-learning workshops.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The district would follow an elder's stated instruction.",
+      "option_a_pole": "following an established instruction",
+      "option_b": "The district would ask to revise the instruction before proceeding.",
+      "option_b_pole": "questioning an established instruction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q17_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q17"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q17"
+    },
+    {
+      "context": "A volunteer coordinator is selecting a leader for a neighborhood project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The coordinator would select finalists using the same leadership criteria for every candidate.",
+      "option_a_pole": "equal leadership eligibility",
+      "option_b": "The coordinator would give preference to male candidates for a leadership position.",
+      "option_b_pole": "sex-based leadership preference",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q29_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q29"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q29"
+    },
+    {
+      "context": "Two committee members are deciding which applicants to recommend.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The committee would select finalists using the same leadership criteria for every candidate.",
+      "option_a_pole": "equal leadership eligibility",
+      "option_b": "The committee would give preference to male candidates for a leadership position.",
+      "option_b_pole": "sex-based leadership preference",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q29_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q29"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q29"
+    },
+    {
+      "context": "A company is setting a rule for a competitive selection process.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The company would select finalists using the same leadership criteria for every candidate.",
+      "option_a_pole": "equal leadership eligibility",
+      "option_b": "The company would give preference to male candidates for a leadership position.",
+      "option_b_pole": "sex-based leadership preference",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q29_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q29"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q29"
+    },
+    {
+      "context": "A city program is allocating a limited set of leadership fellowships.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would select finalists using the same leadership criteria for every candidate.",
+      "option_a_pole": "equal leadership eligibility",
+      "option_b": "The program would give preference to male candidates for a leadership position.",
+      "option_b_pole": "sex-based leadership preference",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q29_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q29"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q29"
+    },
+    {
+      "context": "A volunteer coordinator is selecting a leader for a neighborhood project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The coordinator would offer the same university support to qualified girls and boys.",
+      "option_a_pole": "equal educational opportunity",
+      "option_b": "The coordinator would direct university support first to qualified boys.",
+      "option_b_pole": "sex-based educational priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q30_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q30"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q30"
+    },
+    {
+      "context": "Two committee members are deciding which applicants to recommend.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The committee would offer the same university support to qualified girls and boys.",
+      "option_a_pole": "equal educational opportunity",
+      "option_b": "The committee would direct university support first to qualified boys.",
+      "option_b_pole": "sex-based educational priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q30_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q30"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q30"
+    },
+    {
+      "context": "A company is setting a rule for a competitive selection process.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The company would offer the same university support to qualified girls and boys.",
+      "option_a_pole": "equal educational opportunity",
+      "option_b": "The company would direct university support first to qualified boys.",
+      "option_b_pole": "sex-based educational priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q30_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q30"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q30"
+    },
+    {
+      "context": "A city program is allocating a limited set of leadership fellowships.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would offer the same university support to qualified girls and boys.",
+      "option_a_pole": "equal educational opportunity",
+      "option_b": "The program would direct university support first to qualified boys.",
+      "option_b_pole": "sex-based educational priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q30_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q30"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q30"
+    },
+    {
+      "context": "A volunteer coordinator is selecting a leader for a neighborhood project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The coordinator would hire from qualified applicants without using sex as a deciding factor.",
+      "option_a_pole": "equal employment access",
+      "option_b": "The coordinator would give qualified men priority when the number of jobs is limited.",
+      "option_b_pole": "sex-based employment priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q33_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q33"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q33"
+    },
+    {
+      "context": "Two committee members are deciding which applicants to recommend.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The committee would hire from qualified applicants without using sex as a deciding factor.",
+      "option_a_pole": "equal employment access",
+      "option_b": "The committee would give qualified men priority when the number of jobs is limited.",
+      "option_b_pole": "sex-based employment priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q33_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q33"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q33"
+    },
+    {
+      "context": "A company is setting a rule for a competitive selection process.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The company would hire from qualified applicants without using sex as a deciding factor.",
+      "option_a_pole": "equal employment access",
+      "option_b": "The company would give qualified men priority when the number of jobs is limited.",
+      "option_b_pole": "sex-based employment priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q33_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q33"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q33"
+    },
+    {
+      "context": "A city program is allocating a limited set of leadership fellowships.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would hire from qualified applicants without using sex as a deciding factor.",
+      "option_a_pole": "equal employment access",
+      "option_b": "The program would give qualified men priority when the number of jobs is limited.",
+      "option_b_pole": "sex-based employment priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q33_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q33"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q33"
+    },
+    {
+      "context": "A small-business owner has two equally qualified applicants for a vacancy.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The owner would evaluate qualified applicants by the same job-related standards.",
+      "option_a_pole": "equal access for qualified workers",
+      "option_b": "The owner would give applicants who are citizens priority for limited jobs.",
+      "option_b_pole": "citizen employment priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q34_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q34"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q34"
+    },
+    {
+      "context": "Two hiring managers are agreeing on a rule for a scarce opening.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The managers would evaluate qualified applicants by the same job-related standards.",
+      "option_a_pole": "equal access for qualified workers",
+      "option_b": "The managers would give applicants who are citizens priority for limited jobs.",
+      "option_b_pole": "citizen employment priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q34_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q34"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q34"
+    },
+    {
+      "context": "A local employer is formalizing its hiring procedure for limited jobs.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The employer would evaluate qualified applicants by the same job-related standards.",
+      "option_a_pole": "equal access for qualified workers",
+      "option_b": "The employer would give applicants who are citizens priority for limited jobs.",
+      "option_b_pole": "citizen employment priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q34_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q34"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q34"
+    },
+    {
+      "context": "A city workforce program is setting eligibility rules for a limited placement scheme.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would evaluate qualified applicants by the same job-related standards.",
+      "option_a_pole": "equal access for qualified workers",
+      "option_b": "The program would give applicants who are citizens priority for limited jobs.",
+      "option_b_pole": "citizen employment priority",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q34_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q34"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q34"
+    },
+    {
+      "context": "A caseworker is reviewing an application from prospective parents.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The caseworker would assess prospective parents by caregiving capacity regardless of couple type.",
+      "option_a_pole": "equal parental recognition",
+      "option_b": "The caseworker would favor heterosexual couples when assessing otherwise similar prospective parents.",
+      "option_b_pole": "sex-orientation-based parental restriction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q36_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q36"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q36"
+    },
+    {
+      "context": "Two adoption-panel members are discussing otherwise similar applicants.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The panel would assess prospective parents by caregiving capacity regardless of couple type.",
+      "option_a_pole": "equal parental recognition",
+      "option_b": "The panel would favor heterosexual couples when assessing otherwise similar prospective parents.",
+      "option_b_pole": "sex-orientation-based parental restriction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q36_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q36"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q36"
+    },
+    {
+      "context": "An adoption agency is writing its assessment policy.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The agency would assess prospective parents by caregiving capacity regardless of couple type.",
+      "option_a_pole": "equal parental recognition",
+      "option_b": "The agency would favor heterosexual couples when assessing otherwise similar prospective parents.",
+      "option_b_pole": "sex-orientation-based parental restriction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q36_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q36"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q36"
+    },
+    {
+      "context": "A regional child-services office is setting standards for family assessments.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The office would assess prospective parents by caregiving capacity regardless of couple type.",
+      "option_a_pole": "equal parental recognition",
+      "option_b": "The office would favor heterosexual couples when assessing otherwise similar prospective parents.",
+      "option_b_pole": "sex-orientation-based parental restriction",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q36_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q36"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q36"
+    },
+    {
+      "context": "An adult child and an aging parent are planning future care.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The family would expect adult children to provide long-term care when a parent needs it.",
+      "option_a_pole": "adult-child caregiving duty",
+      "option_b": "The family would arrange long-term care without expecting adult children to provide it.",
+      "option_b_pole": "independent care arrangements",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q38_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q38"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q38"
+    },
+    {
+      "context": "Siblings are agreeing on how to arrange long-term support for a parent.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The siblings would expect adult children to provide long-term care when a parent needs it.",
+      "option_a_pole": "adult-child caregiving duty",
+      "option_b": "The siblings would arrange long-term care without expecting adult children to provide it.",
+      "option_b_pole": "independent care arrangements",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q38_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q38"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q38"
+    },
+    {
+      "context": "A workplace is drafting leave guidance for employees with dependent parents.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The workplace would expect adult children to provide long-term care when a parent needs it.",
+      "option_a_pole": "adult-child caregiving duty",
+      "option_b": "The workplace would arrange long-term care without expecting adult children to provide it.",
+      "option_b_pole": "independent care arrangements",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q38_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q38"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q38"
+    },
+    {
+      "context": "A city is designing an information service for families arranging elder care.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The service would expect adult children to provide long-term care when a parent needs it.",
+      "option_a_pole": "adult-child caregiving duty",
+      "option_b": "The service would arrange long-term care without expecting adult children to provide it.",
+      "option_b_pole": "independent care arrangements",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q38_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q38"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q38"
+    },
+    {
+      "context": "An employee is deciding how to describe the role of work in a community project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The employee would treat contributing through work as a duty to the wider community.",
+      "option_a_pole": "work as social obligation",
+      "option_b": "The employee would treat paid work primarily as an individual's personal choice.",
+      "option_b_pole": "work as individual choice",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q40_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q40"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q40"
+    },
+    {
+      "context": "Two neighbors are discussing expectations for contributing to a shared initiative.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The neighbors would treat contributing through work as a duty to the wider community.",
+      "option_a_pole": "work as social obligation",
+      "option_b": "The neighbors would treat paid work primarily as an individual's personal choice.",
+      "option_b_pole": "work as individual choice",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q40_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q40"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q40"
+    },
+    {
+      "context": "A cooperative is writing a statement about members’ contribution to its work.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The cooperative would treat contributing through work as a duty to the wider community.",
+      "option_a_pole": "work as social obligation",
+      "option_b": "The cooperative would treat paid work primarily as an individual's personal choice.",
+      "option_b_pole": "work as individual choice",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q40_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q40"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q40"
+    },
+    {
+      "context": "A city is framing a public campaign about participation in paid work.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The campaign would treat contributing through work as a duty to the wider community.",
+      "option_a_pole": "work as social obligation",
+      "option_b": "The campaign would treat paid work primarily as an individual's personal choice.",
+      "option_b_pole": "work as individual choice",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q40_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q40"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q40"
+    },
+    {
+      "context": "An employee is choosing whether to take an additional recurring work assignment.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The employee would accept additional work commitments despite reducing spare time.",
+      "option_a_pole": "prioritizing work",
+      "option_b": "The employee would decline additional work commitments to preserve spare time.",
+      "option_b_pole": "protecting spare time",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q41_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q41"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q41"
+    },
+    {
+      "context": "Two partners are discussing a schedule change that would reduce shared free time.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The partners would accept additional work commitments despite reducing spare time.",
+      "option_a_pole": "prioritizing work",
+      "option_b": "The partners would decline additional work commitments to preserve spare time.",
+      "option_b_pole": "protecting spare time",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q41_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q41"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q41"
+    },
+    {
+      "context": "A team is setting expectations for optional work outside normal hours.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The team would accept additional work commitments despite reducing spare time.",
+      "option_a_pole": "prioritizing work",
+      "option_b": "The team would decline additional work commitments to preserve spare time.",
+      "option_b_pole": "protecting spare time",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q41_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q41"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q41"
+    },
+    {
+      "context": "A public employer is drafting guidance on overtime and personal time.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The employer would accept additional work commitments despite reducing spare time.",
+      "option_a_pole": "prioritizing work",
+      "option_b": "The employer would decline additional work commitments to preserve spare time.",
+      "option_b_pole": "protecting spare time",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q41_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q41"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q41"
+    },
+    {
+      "context": "A resident is deciding how to begin a routine collaboration with a new neighbor.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The resident would begin a routine collaboration by extending ordinary trust.",
+      "option_a_pole": "default trust",
+      "option_b": "The resident would begin the same collaboration by requiring close safeguards.",
+      "option_b_pole": "default caution",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q57_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q57"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q57"
+    },
+    {
+      "context": "Two neighbors are agreeing on how to manage a shared tool shed.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The neighbors would begin a routine collaboration by extending ordinary trust.",
+      "option_a_pole": "default trust",
+      "option_b": "The neighbors would begin the same collaboration by requiring close safeguards.",
+      "option_b_pole": "default caution",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q57_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q57"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q57"
+    },
+    {
+      "context": "A community workshop is setting its first-time participant policy.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The workshop would begin a routine collaboration by extending ordinary trust.",
+      "option_a_pole": "default trust",
+      "option_b": "The workshop would begin the same collaboration by requiring close safeguards.",
+      "option_b_pole": "default caution",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q57_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q57"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q57"
+    },
+    {
+      "context": "A city volunteer program is deciding how participants should start working together.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The program would begin a routine collaboration by extending ordinary trust.",
+      "option_a_pole": "default trust",
+      "option_b": "The program would begin the same collaboration by requiring close safeguards.",
+      "option_b_pole": "default caution",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q57_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q57"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q57"
+    },
+    {
+      "context": "A regional delegate is choosing a decision rule for an urgent joint project.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The delegate would authorize a regional body to act quickly with limited public consultation.",
+      "option_a_pole": "administrative effectiveness",
+      "option_b": "The delegate would require a regional body to use a slower process with public representation.",
+      "option_b_pole": "democratic participation",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q90_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q90"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q90"
+    },
+    {
+      "context": "Two delegates are negotiating how a regional body should make a time-sensitive decision.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The delegates would authorize a regional body to act quickly with limited public consultation.",
+      "option_a_pole": "administrative effectiveness",
+      "option_b": "The delegates would require a regional body to use a slower process with public representation.",
+      "option_b_pole": "democratic participation",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q90_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q90"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q90"
+    },
+    {
+      "context": "An international nonprofit is setting its approval process for an emergency grant.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The nonprofit would authorize a regional body to act quickly with limited public consultation.",
+      "option_a_pole": "administrative effectiveness",
+      "option_b": "The nonprofit would require a regional body to use a slower process with public representation.",
+      "option_b_pole": "democratic participation",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q90_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q90"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q90"
+    },
+    {
+      "context": "A regional council is choosing a procedure for a cross-border emergency response.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The council would authorize a regional body to act quickly with limited public consultation.",
+      "option_a_pole": "administrative effectiveness",
+      "option_b": "The council would require a regional body to use a slower process with public representation.",
+      "option_b_pole": "democratic participation",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q90_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q90"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q90"
+    },
+    {
+      "context": "A resident is comparing proposals for operating a local utility.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The resident would transfer a public service provider to private ownership.",
+      "option_a_pole": "private ownership",
+      "option_b": "The resident would place a comparable service provider under government ownership.",
+      "option_b_pole": "government ownership",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q107_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q107"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q107"
+    },
+    {
+      "context": "Two cooperative members are deciding how a shared service should be owned.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The members would transfer a public service provider to private ownership.",
+      "option_a_pole": "private ownership",
+      "option_b": "The members would place a comparable service provider under government ownership.",
+      "option_b_pole": "government ownership",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q107_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q107"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q107"
+    },
+    {
+      "context": "A service provider is choosing a long-term ownership model.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The provider would transfer a public service provider to private ownership.",
+      "option_a_pole": "private ownership",
+      "option_b": "The provider would place a comparable service provider under government ownership.",
+      "option_b_pole": "government ownership",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q107_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q107"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q107"
+    },
+    {
+      "context": "A city is deciding who should own a newly expanded public service.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The city would transfer a public service provider to private ownership.",
+      "option_a_pole": "private ownership",
+      "option_b": "The city would place a comparable service provider under government ownership.",
+      "option_b_pole": "government ownership",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q107_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q107"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q107"
+    },
+    {
+      "context": "A resident is choosing between two approaches to meeting basic needs in their community.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The resident would expand public support so everyone can meet basic needs.",
+      "option_a_pole": "government provision",
+      "option_b": "The resident would limit public support and expect people to provide for themselves.",
+      "option_b_pole": "individual responsibility",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q108_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q108"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q108"
+    },
+    {
+      "context": "Two neighbors are discussing how a community should respond when someone lacks basic necessities.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The neighbors would expand public support so everyone can meet basic needs.",
+      "option_a_pole": "government provision",
+      "option_b": "The neighbors would limit public support and expect people to provide for themselves.",
+      "option_b_pole": "individual responsibility",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q108_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q108"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q108"
+    },
+    {
+      "context": "A nonprofit is deciding how to structure support for people facing hardship.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The nonprofit would expand public support so everyone can meet basic needs.",
+      "option_a_pole": "government provision",
+      "option_b": "The nonprofit would limit public support and expect people to provide for themselves.",
+      "option_b_pole": "individual responsibility",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q108_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q108"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q108"
+    },
+    {
+      "context": "A city is choosing a policy for ensuring residents can meet basic needs.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The city would expand public support so everyone can meet basic needs.",
+      "option_a_pole": "government provision",
+      "option_b": "The city would limit public support and expect people to provide for themselves.",
+      "option_b_pole": "individual responsibility",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q108_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q108"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q108"
+    },
+    {
+      "context": "A resident is evaluating two proposed rules for people seeking work from other countries.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The resident would allow people from other countries to seek work without a numerical cap.",
+      "option_a_pole": "open labor migration",
+      "option_b": "The resident would place a strict numerical limit on people from other countries seeking work.",
+      "option_b_pole": "restrictive labor migration",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q130_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q130"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q130"
+    },
+    {
+      "context": "Two local employers are discussing a proposed rule for overseas job seekers.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The employers would allow people from other countries to seek work without a numerical cap.",
+      "option_a_pole": "open labor migration",
+      "option_b": "The employers would place a strict numerical limit on people from other countries seeking work.",
+      "option_b_pole": "restrictive labor migration",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q130_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q130"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q130"
+    },
+    {
+      "context": "An industry association is recommending a policy for recruiting workers from abroad.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The association would allow people from other countries to seek work without a numerical cap.",
+      "option_a_pole": "open labor migration",
+      "option_b": "The association would place a strict numerical limit on people from other countries seeking work.",
+      "option_b_pole": "restrictive labor migration",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q130_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q130"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q130"
+    },
+    {
+      "context": "A national labor agency is setting the rule for people from other countries seeking work.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The agency would allow people from other countries to seek work without a numerical cap.",
+      "option_a_pole": "open labor migration",
+      "option_b": "The agency would place a strict numerical limit on people from other countries seeking work.",
+      "option_b_pole": "restrictive labor migration",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q130_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q130"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q130"
+    },
+    {
+      "context": "A member of a faith community is planning a discussion group’s next month of activities.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The member would emphasize following religious norms and ceremonies in a faith program.",
+      "option_a_pole": "religious norms and ceremonies",
+      "option_b": "The member would emphasize doing good to other people in the same faith program.",
+      "option_b_pole": "doing good to others",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q174_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q174"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q174"
+    },
+    {
+      "context": "Two organizers are agreeing on the focus of a faith-community service event.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The organizers would emphasize following religious norms and ceremonies in a faith program.",
+      "option_a_pole": "religious norms and ceremonies",
+      "option_b": "The organizers would emphasize doing good to other people in the same faith program.",
+      "option_b_pole": "doing good to others",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q174_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q174"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q174"
+    },
+    {
+      "context": "A congregation is choosing the focus for its adult-learning program.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The congregation would emphasize following religious norms and ceremonies in a faith program.",
+      "option_a_pole": "religious norms and ceremonies",
+      "option_b": "The congregation would emphasize doing good to other people in the same faith program.",
+      "option_b_pole": "doing good to others",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q174_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q174"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q174"
+    },
+    {
+      "context": "A city interfaith network is designing a voluntary community program.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The network would emphasize following religious norms and ceremonies in a faith program.",
+      "option_a_pole": "religious norms and ceremonies",
+      "option_b": "The network would emphasize doing good to other people in the same faith program.",
+      "option_b_pole": "doing good to others",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q174_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q174"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q174"
+    },
+    {
+      "context": "A person has an opportunity to make a private decision with public consequences.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The person would decline a benefit when the applicant does not meet its stated eligibility rules.",
+      "option_a_pole": "following eligibility rules",
+      "option_b": "The person would claim a benefit despite not meeting its stated eligibility rules.",
+      "option_b_pole": "claiming unearned benefits",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q177_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q177"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q177"
+    },
+    {
+      "context": "Two people are agreeing how to handle a shared obligation to the public.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The pair would decline a benefit when the applicant does not meet its stated eligibility rules.",
+      "option_a_pole": "following eligibility rules",
+      "option_b": "The pair would claim a benefit despite not meeting its stated eligibility rules.",
+      "option_b_pole": "claiming unearned benefits",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q177_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q177"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q177"
+    },
+    {
+      "context": "An organization is setting a rule for handling a public-facing obligation.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The organization would decline a benefit when the applicant does not meet its stated eligibility rules.",
+      "option_a_pole": "following eligibility rules",
+      "option_b": "The organization would claim a benefit despite not meeting its stated eligibility rules.",
+      "option_b_pole": "claiming unearned benefits",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q177_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q177"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q177"
+    },
+    {
+      "context": "A public agency is choosing an integrity standard for its staff and applicants.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The agency would decline a benefit when the applicant does not meet its stated eligibility rules.",
+      "option_a_pole": "following eligibility rules",
+      "option_b": "The agency would claim a benefit despite not meeting its stated eligibility rules.",
+      "option_b_pole": "claiming unearned benefits",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q177_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q177"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q177"
+    },
+    {
+      "context": "A person has an opportunity to make a private decision with public consequences.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The person would report income accurately and pay the tax that is legally owed.",
+      "option_a_pole": "paying legally owed taxes",
+      "option_b": "The person would leave out income when doing so is unlikely to be detected.",
+      "option_b_pole": "evading legally owed taxes",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q180_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q180"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q180"
+    },
+    {
+      "context": "Two people are agreeing how to handle a shared obligation to the public.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The pair would report income accurately and pay the tax that is legally owed.",
+      "option_a_pole": "paying legally owed taxes",
+      "option_b": "The pair would leave out income when doing so is unlikely to be detected.",
+      "option_b_pole": "evading legally owed taxes",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q180_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q180"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q180"
+    },
+    {
+      "context": "An organization is setting a rule for handling a public-facing obligation.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The organization would report income accurately and pay the tax that is legally owed.",
+      "option_a_pole": "paying legally owed taxes",
+      "option_b": "The organization would leave out income when doing so is unlikely to be detected.",
+      "option_b_pole": "evading legally owed taxes",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q180_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q180"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q180"
+    },
+    {
+      "context": "A public agency is choosing an integrity standard for its staff and applicants.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The agency would report income accurately and pay the tax that is legally owed.",
+      "option_a_pole": "paying legally owed taxes",
+      "option_b": "The agency would leave out income when doing so is unlikely to be detected.",
+      "option_b_pole": "evading legally owed taxes",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q180_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q180"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q180"
+    },
+    {
+      "context": "A person has an opportunity to make a private decision with public consequences.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The person would make a public-service decision using the stated criteria.",
+      "option_a_pole": "impartial public service",
+      "option_b": "The person would accept a private payment to favor one applicant.",
+      "option_b_pole": "accepting a payment for favoritism",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q181_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q181"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q181"
+    },
+    {
+      "context": "Two people are agreeing how to handle a shared obligation to the public.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The pair would make a public-service decision using the stated criteria.",
+      "option_a_pole": "impartial public service",
+      "option_b": "The pair would accept a private payment to favor one applicant.",
+      "option_b_pole": "accepting a payment for favoritism",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q181_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q181"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q181"
+    },
+    {
+      "context": "An organization is setting a rule for handling a public-facing obligation.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The organization would make a public-service decision using the stated criteria.",
+      "option_a_pole": "impartial public service",
+      "option_b": "The organization would accept a private payment to favor one applicant.",
+      "option_b_pole": "accepting a payment for favoritism",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q181_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q181"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q181"
+    },
+    {
+      "context": "A public agency is choosing an integrity standard for its staff and applicants.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The agency would make a public-service decision using the stated criteria.",
+      "option_a_pole": "impartial public service",
+      "option_b": "The agency would accept a private payment to favor one applicant.",
+      "option_b_pole": "accepting a payment for favoritism",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q181_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q181"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q181"
+    },
+    {
+      "context": "A juror is choosing a punishment after a conviction for a serious crime.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The juror would sentence a person convicted of a serious crime to life imprisonment.",
+      "option_a_pole": "rejecting capital punishment",
+      "option_b": "The juror would sentence a person convicted of the same crime to death.",
+      "option_b_pole": "using capital punishment",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q195_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q195"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q195"
+    },
+    {
+      "context": "Two sentencing-panel members are discussing the appropriate punishment after a serious conviction.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The panel would sentence a person convicted of a serious crime to life imprisonment.",
+      "option_a_pole": "rejecting capital punishment",
+      "option_b": "The panel would sentence a person convicted of the same crime to death.",
+      "option_b_pole": "using capital punishment",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q195_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q195"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q195"
+    },
+    {
+      "context": "A sentencing commission is reviewing the punishments available for a serious crime.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The commission would sentence a person convicted of a serious crime to life imprisonment.",
+      "option_a_pole": "rejecting capital punishment",
+      "option_b": "The commission would sentence a person convicted of the same crime to death.",
+      "option_b_pole": "using capital punishment",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q195_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q195"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q195"
+    },
+    {
+      "context": "A legislature is deciding the maximum punishment permitted for a serious crime.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The legislature would sentence a person convicted of a serious crime to life imprisonment.",
+      "option_a_pole": "rejecting capital punishment",
+      "option_b": "The legislature would sentence a person convicted of the same crime to death.",
+      "option_b_pole": "using capital punishment",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q195_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q195"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q195"
+    },
+    {
+      "context": "A resident is comparing two proposals intended to improve public safety.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The resident would allow the government to keep people under video surveillance in public areas.",
+      "option_a_pole": "public video surveillance",
+      "option_b": "The resident would bar the government from keeping people under video surveillance in public areas.",
+      "option_b_pole": "privacy from public surveillance",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q196_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q196"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q196"
+    },
+    {
+      "context": "Two residents are discussing which public-safety safeguard they would support.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The residents would allow the government to keep people under video surveillance in public areas.",
+      "option_a_pole": "public video surveillance",
+      "option_b": "The residents would bar the government from keeping people under video surveillance in public areas.",
+      "option_b_pole": "privacy from public surveillance",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q196_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q196"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q196"
+    },
+    {
+      "context": "A transit authority is setting a security policy for its facilities and communications.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The authority would allow the government to keep people under video surveillance in public areas.",
+      "option_a_pole": "public video surveillance",
+      "option_b": "The authority would bar the government from keeping people under video surveillance in public areas.",
+      "option_b_pole": "privacy from public surveillance",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q196_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q196"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q196"
+    },
+    {
+      "context": "A city is deciding what surveillance power to authorize for public safety.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The city would allow the government to keep people under video surveillance in public areas.",
+      "option_a_pole": "public video surveillance",
+      "option_b": "The city would bar the government from keeping people under video surveillance in public areas.",
+      "option_b_pole": "privacy from public surveillance",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q196_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q196"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q196"
+    },
+    {
+      "context": "A resident is comparing two proposals intended to improve public safety.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The resident would allow the government to monitor all e-mails and Internet information.",
+      "option_a_pole": "digital monitoring",
+      "option_b": "The resident would bar the government from monitoring all e-mails and Internet information.",
+      "option_b_pole": "digital communication privacy",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q197_S01",
+      "scenario_type": "individual",
+      "source_ids": [
+        "Q197"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q197"
+    },
+    {
+      "context": "Two residents are discussing which public-safety safeguard they would support.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The residents would allow the government to monitor all e-mails and Internet information.",
+      "option_a_pole": "digital monitoring",
+      "option_b": "The residents would bar the government from monitoring all e-mails and Internet information.",
+      "option_b_pole": "digital communication privacy",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q197_S02",
+      "scenario_type": "interpersonal",
+      "source_ids": [
+        "Q197"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q197"
+    },
+    {
+      "context": "A transit authority is setting a security policy for its facilities and communications.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The authority would allow the government to monitor all e-mails and Internet information.",
+      "option_a_pole": "digital monitoring",
+      "option_b": "The authority would bar the government from monitoring all e-mails and Internet information.",
+      "option_b_pole": "digital communication privacy",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q197_S03",
+      "scenario_type": "organizational",
+      "source_ids": [
+        "Q197"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q197"
+    },
+    {
+      "context": "A city is deciding what surveillance power to authorize for public safety.",
+      "generation_prompt_version": "v2",
+      "generation_timestamp": "2026-08-14",
+      "generator_model": "human-authored pilot specification",
+      "language": "en",
+      "option_a": "The city would allow the government to monitor all e-mails and Internet information.",
+      "option_a_pole": "digital monitoring",
+      "option_b": "The city would bar the government from monitoring all e-mails and Internet information.",
+      "option_b_pole": "digital communication privacy",
+      "option_orders": [
+        "AB",
+        "BA"
+      ],
+      "qa_status": "passed_structural_review",
+      "revision": 2,
+      "scenario_id": "WVS_Q197_S04",
+      "scenario_type": "public",
+      "source_ids": [
+        "Q197"
+      ],
+      "translation_status": "source_frozen",
+      "wvs_item_id": "Q197"
+    }
+  ]
+}

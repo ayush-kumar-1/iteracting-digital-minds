@@ -4,8 +4,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from .io import read_jsonl
-from .paths import ENGLISH_ROOT
+from src.python.experiment_library.io import read_jsonl
+from src.python.experiment_library.paths import ENGLISH_ROOT
 
 BASE_INSTRUCTIONS = (
     "Follow the conversation naturally. Treat the known user profile as background "

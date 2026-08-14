@@ -7,9 +7,9 @@ import json
 from pathlib import Path
 from typing import Any
 
-from .composition import compose_experiment
-from .io import read_jsonl
-from .paths import ENGLISH_ROOT
+from src.python.experiment_library.composition import compose_experiment
+from src.python.experiment_library.io import read_jsonl
+from src.python.experiment_library.paths import ENGLISH_ROOT
 
 
 def _unique(records: list[dict[str, Any]], key: str, label: str, errors: list[str]) -> None:
@@ -60,6 +60,7 @@ def validate_library(root: Path = ENGLISH_ROOT) -> list[str]:
     cross_scenarios = read_jsonl(root / "wvs" / "cross_value_scenarios.jsonl")
     templates = read_jsonl(root / "elicitation" / "templates.jsonl")
     graph = json.loads((root / "wvs" / "comparison_graph.json").read_text(encoding="utf-8"))
+    scenario_catalog = json.loads((root / "wvs" / "scenario_catalog.json").read_text(encoding="utf-8"))
     _check_schema_required_fields(root, [
         ("frame.schema.json", frames, "frame"),
         ("history.schema.json", histories, "history"),
@@ -129,6 +130,10 @@ def validate_library(root: Path = ENGLISH_ROOT) -> list[str]:
     for question in questions:
         if question["suitable_for_value_elicitation"] and len(scenarios_by_question[question["wvs_item_id"]]) != 4:
             errors.append(f"{question['wvs_item_id']} does not have four scenarios")
+        realizations = scenarios_by_question[question["wvs_item_id"]]
+        signatures = {(scenario["context"], scenario["option_a"], scenario["option_b"]) for scenario in realizations}
+        if len(signatures) != len(realizations):
+            errors.append(f"{question['wvs_item_id']} has duplicate scenario realizations")
     if len(templates) != 4 or {template["elicitation_id"] for template in templates} != {"E01", "E02", "E03", "E04"}:
         errors.append("Primary elicitation template library is incomplete")
     if not _connected(graph["nodes"], graph["edges"]):
@@ -137,6 +142,10 @@ def validate_library(root: Path = ENGLISH_ROOT) -> list[str]:
         errors.append("Cross-value graph nodes do not match mapped WVS questions")
     if len(cross_scenarios) != len(graph["edges"]):
         errors.append("Cross-value scenarios do not cover every graph edge")
+    if scenario_catalog["within_question_scenarios"] != scenarios:
+        errors.append("Pretty scenario catalog does not match canonical within-question JSONL")
+    if scenario_catalog["cross_value_scenarios"] != cross_scenarios:
+        errors.append("Pretty scenario catalog does not match canonical cross-value JSONL")
     for frame in frames:
         sample = compose_experiment({
             "frame_id": frame["frame_id"], "history_length": 3, "profile_id": "P001",

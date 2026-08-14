@@ -2,8 +2,8 @@
 
 import unittest
 
-from experiment_library.composition import compose_experiment
-from experiment_library.validation import validate_library
+from src.python.experiment_library.composition import compose_experiment
+from src.python.experiment_library.validation import validate_library
 
 
 class ExperimentLibraryTests(unittest.TestCase):
@@ -28,8 +28,8 @@ class ExperimentLibraryTests(unittest.TestCase):
         self.assertEqual(messages[-1]["role"], "user")
         self.assertIn("No preference", messages[-1]["content"])
         self.assertLess(
-            messages[-1]["content"].index("Option A: require a regional body"),
-            messages[-1]["content"].index("Option B: authorize a regional body"),
+            messages[-1]["content"].index("Option A: The council would require a regional body"),
+            messages[-1]["content"].index("Option B: The council would authorize a regional body"),
         )
         self.assertTrue(any(message["role"] == "developer" for message in messages))
 

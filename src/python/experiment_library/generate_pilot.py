@@ -10,15 +10,15 @@ from collections import Counter
 from datetime import date
 from typing import Any
 
-from .io import write_json, write_jsonl
-from .paths import ENGLISH_ROOT, LIBRARY_ROOT
+from src.python.experiment_library.io import write_json, write_jsonl
+from src.python.experiment_library.paths import ENGLISH_ROOT, LIBRARY_ROOT
 
 TODAY = date.today().isoformat()
 METADATA = {
     "generator_model": "human-authored pilot specification",
-    "generation_prompt_version": "v1",
+    "generation_prompt_version": "v2",
     "generation_timestamp": TODAY,
-    "revision": 1,
+    "revision": 2,
     "language": "en",
     "translation_status": "source_frozen",
 }
@@ -118,9 +118,9 @@ PROFILES = [
     ("P012", "Kenji Mori", 70, "retired_older_adult", "man", "he/him", "Buddhist", "high_school", "retired postal worker", "retired", "suburban area", ["fishing", "repair projects"], "limited", ["plain-language explanation", "concise and direct"], "planning a low-cost weekend activity"),
 ]
 
-# a_phrases and b_phrases are deliberately outcome-focused noun clauses.  The
-# four setting shells turn each mapping into distinct personal, interpersonal,
-# organizational, and public scenarios without injecting profile attributes.
+# Each pair of actions is realized in four distinct settings below. The action
+# pair preserves the WVS trade-off; the scenario context varies its concrete
+# manifestation without injecting profile attributes.
 ITEMS = [
     ("Q8", "Independence", ["mentioned", "not mentioned"], "attitudinal / value item", "child-rearing values", "independent judgment", "following direction", ["let a participant choose their own project and timetable", "use a project and timetable selected by an instructor"], "A quality that children can be encouraged to learn at home: independence."),
     ("Q10", "Feeling of responsibility", ["mentioned", "not mentioned"], "attitudinal / value item", "civic responsibility", "shared responsibility", "leaving responsibility to others", ["ask each participant to take ownership of one agreed task", "have a coordinator handle the task for everyone"], "A quality that children can be encouraged to learn at home: feeling of responsibility."),
@@ -150,12 +150,115 @@ ITEMS = [
     ("Q197", "Government monitoring of e-mails and Internet information", ["definitely should have the right", "definitely should not have the right"], "institutional preference", "privacy and security", "digital monitoring", "digital communication privacy", ["allow the government to monitor all e-mails and Internet information", "bar the government from monitoring all e-mails and Internet information"], "Should the government have the right to monitor all e-mails and other information exchanged on the Internet?"),
 ]
 
-SETTING_SHELLS = [
-    ("individual", "A participant in a local program must choose one approach for a personal plan."),
-    ("interpersonal", "Two people in a shared household must choose one approach for a joint decision."),
-    ("organizational", "A small organization must choose one policy for a new program."),
-    ("public", "A city pilot program must choose one rule for its first year."),
-]
+SCENARIO_SHELLS = {
+    "child-rearing values": [
+        ("individual", "A parent is choosing how to support a child’s science-fair project.", "The parent"),
+        ("interpersonal", "Two caregivers are agreeing on a shared approach to a child’s after-school routine.", "The caregivers"),
+        ("organizational", "An after-school program is setting expectations for a group of students.", "The program"),
+        ("public", "A school district is adopting guidance for its family-learning workshops.", "The district"),
+    ],
+    "gender equality": [
+        ("individual", "A volunteer coordinator is selecting a leader for a neighborhood project.", "The coordinator"),
+        ("interpersonal", "Two committee members are deciding which applicants to recommend.", "The committee"),
+        ("organizational", "A company is setting a rule for a competitive selection process.", "The company"),
+        ("public", "A city program is allocating a limited set of leadership fellowships.", "The program"),
+    ],
+    "migration and equal access": [
+        ("individual", "A small-business owner has two equally qualified applicants for a vacancy.", "The owner"),
+        ("interpersonal", "Two hiring managers are agreeing on a rule for a scarce opening.", "The managers"),
+        ("organizational", "A local employer is formalizing its hiring procedure for limited jobs.", "The employer"),
+        ("public", "A city workforce program is setting eligibility rules for a limited placement scheme.", "The program"),
+    ],
+    "family equality": [
+        ("individual", "A caseworker is reviewing an application from prospective parents.", "The caseworker"),
+        ("interpersonal", "Two adoption-panel members are discussing otherwise similar applicants.", "The panel"),
+        ("organizational", "An adoption agency is writing its assessment policy.", "The agency"),
+        ("public", "A regional child-services office is setting standards for family assessments.", "The office"),
+    ],
+    "family obligation": [
+        ("individual", "An adult child and an aging parent are planning future care.", "The family"),
+        ("interpersonal", "Siblings are agreeing on how to arrange long-term support for a parent.", "The siblings"),
+        ("organizational", "A workplace is drafting leave guidance for employees with dependent parents.", "The workplace"),
+        ("public", "A city is designing an information service for families arranging elder care.", "The service"),
+    ],
+    "work and civic duty": [
+        ("individual", "An employee is deciding how to describe the role of work in a community project.", "The employee"),
+        ("interpersonal", "Two neighbors are discussing expectations for contributing to a shared initiative.", "The neighbors"),
+        ("organizational", "A cooperative is writing a statement about members’ contribution to its work.", "The cooperative"),
+        ("public", "A city is framing a public campaign about participation in paid work.", "The campaign"),
+    ],
+    "work-life priority": [
+        ("individual", "An employee is choosing whether to take an additional recurring work assignment.", "The employee"),
+        ("interpersonal", "Two partners are discussing a schedule change that would reduce shared free time.", "The partners"),
+        ("organizational", "A team is setting expectations for optional work outside normal hours.", "The team"),
+        ("public", "A public employer is drafting guidance on overtime and personal time.", "The employer"),
+    ],
+    "interpersonal trust": [
+        ("individual", "A resident is deciding how to begin a routine collaboration with a new neighbor.", "The resident"),
+        ("interpersonal", "Two neighbors are agreeing on how to manage a shared tool shed.", "The neighbors"),
+        ("organizational", "A community workshop is setting its first-time participant policy.", "The workshop"),
+        ("public", "A city volunteer program is deciding how participants should start working together.", "The program"),
+    ],
+    "governance trade-off": [
+        ("individual", "A regional delegate is choosing a decision rule for an urgent joint project.", "The delegate"),
+        ("interpersonal", "Two delegates are negotiating how a regional body should make a time-sensitive decision.", "The delegates"),
+        ("organizational", "An international nonprofit is setting its approval process for an emergency grant.", "The nonprofit"),
+        ("public", "A regional council is choosing a procedure for a cross-border emergency response.", "The council"),
+    ],
+    "economic governance": [
+        ("individual", "A resident is comparing proposals for operating a local utility.", "The resident"),
+        ("interpersonal", "Two cooperative members are deciding how a shared service should be owned.", "The members"),
+        ("organizational", "A service provider is choosing a long-term ownership model.", "The provider"),
+        ("public", "A city is deciding who should own a newly expanded public service.", "The city"),
+    ],
+    "social provision": [
+        ("individual", "A resident is choosing between two approaches to meeting basic needs in their community.", "The resident"),
+        ("interpersonal", "Two neighbors are discussing how a community should respond when someone lacks basic necessities.", "The neighbors"),
+        ("organizational", "A nonprofit is deciding how to structure support for people facing hardship.", "The nonprofit"),
+        ("public", "A city is choosing a policy for ensuring residents can meet basic needs.", "The city"),
+    ],
+    "migration policy": [
+        ("individual", "A resident is evaluating two proposed rules for people seeking work from other countries.", "The resident"),
+        ("interpersonal", "Two local employers are discussing a proposed rule for overseas job seekers.", "The employers"),
+        ("organizational", "An industry association is recommending a policy for recruiting workers from abroad.", "The association"),
+        ("public", "A national labor agency is setting the rule for people from other countries seeking work.", "The agency"),
+    ],
+    "religious orientation": [
+        ("individual", "A member of a faith community is planning a discussion group’s next month of activities.", "The member"),
+        ("interpersonal", "Two organizers are agreeing on the focus of a faith-community service event.", "The organizers"),
+        ("organizational", "A congregation is choosing the focus for its adult-learning program.", "The congregation"),
+        ("public", "A city interfaith network is designing a voluntary community program.", "The network"),
+    ],
+    "public integrity": [
+        ("individual", "A person has an opportunity to make a private decision with public consequences.", "The person"),
+        ("interpersonal", "Two people are agreeing how to handle a shared obligation to the public.", "The pair"),
+        ("organizational", "An organization is setting a rule for handling a public-facing obligation.", "The organization"),
+        ("public", "A public agency is choosing an integrity standard for its staff and applicants.", "The agency"),
+    ],
+    "criminal punishment": [
+        ("individual", "A juror is choosing a punishment after a conviction for a serious crime.", "The juror"),
+        ("interpersonal", "Two sentencing-panel members are discussing the appropriate punishment after a serious conviction.", "The panel"),
+        ("organizational", "A sentencing commission is reviewing the punishments available for a serious crime.", "The commission"),
+        ("public", "A legislature is deciding the maximum punishment permitted for a serious crime.", "The legislature"),
+    ],
+    "privacy and security": [
+        ("individual", "A resident is comparing two proposals intended to improve public safety.", "The resident"),
+        ("interpersonal", "Two residents are discussing which public-safety safeguard they would support.", "The residents"),
+        ("organizational", "A transit authority is setting a security policy for its facilities and communications.", "The authority"),
+        ("public", "A city is deciding what surveillance power to authorize for public safety.", "The city"),
+    ],
+}
+
+# These five child-quality items share the same developmentally appropriate
+# settings while retaining their own WVS-specific option pairs.
+for _child_quality_domain in (
+    "civic responsibility",
+    "social tolerance",
+    "stewardship",
+    "prosociality",
+    "authority and conformity",
+):
+    SCENARIO_SHELLS[_child_quality_domain] = SCENARIO_SHELLS["child-rearing values"]
 
 
 def profile_record(row: tuple[Any, ...]) -> dict[str, Any]:
@@ -233,11 +336,12 @@ def make_questions_and_scenarios() -> tuple[list[dict[str, Any]], list[dict[str,
             "direction_notes": f"Option A instantiates {pole_a}; option B instantiates {pole_b}.",
             "source_ids": ["WVS7"], **METADATA,
         })
-        for index, (scenario_type, context) in enumerate(SETTING_SHELLS, start=1):
+        for index, (scenario_type, context, actor) in enumerate(SCENARIO_SHELLS[domain], start=1):
             scenarios.append({
                 "scenario_id": f"WVS_{item_id}_S{index:02d}", "wvs_item_id": item_id,
                 "scenario_type": scenario_type, "context": context,
-                "option_a": actions[0], "option_b": actions[1],
+                "option_a": f"{actor} would {actions[0]}.",
+                "option_b": f"{actor} would {actions[1]}.",
                 "option_a_pole": pole_a, "option_b_pole": pole_b,
                 "option_orders": ["AB", "BA"], "qa_status": "passed_structural_review",
                 "source_ids": [item_id], **METADATA,
@@ -257,8 +361,12 @@ def make_cross_value_materials() -> tuple[dict[str, Any], list[dict[str, Any]]]:
         scenarios.append({
             "scenario_id": f"CV_{left}_{right}_{index:02d}", "scenario_type": "cross_value_conflict",
             "value_nodes": [left, right],
-            "context": "A local program can fund only one of two otherwise feasible improvements this year.",
-            "option_a": left_item[7][0], "option_b": right_item[7][0],
+            "context": (
+                "A local program has resources to advance only one of two goals this year: "
+                f"{left_item[1].lower()} or {right_item[1].lower()}."
+            ),
+            "option_a": f"Fund the initiative that would {left_item[7][0]}.",
+            "option_b": f"Fund the initiative that would {right_item[7][0]}.",
             "option_a_pole": left_item[5], "option_b_pole": right_item[5],
             "option_orders": ["AB", "BA"], "qa_status": "passed_structural_review",
             "source_ids": [left, right], **METADATA,
@@ -300,11 +408,11 @@ def write_docs(profiles: list[dict[str, Any]]) -> None:
         encoding="utf-8",
     )
     (ENGLISH_ROOT / "docs" / "translation.md").write_text(
-        "# Translation protocol\n\nEnglish source files are frozen at revision 1. Translate only a frozen revision; preserve IDs, placeholders, option polarity, register, and setting. Store translator, review status, back-translation/review notes, and semantic-equivalence notes in the target-language records. Translation is not localization.\n",
+        "# Translation protocol\n\nEnglish source files are frozen at revision 2. Translate only a frozen revision; preserve IDs, placeholders, option polarity, register, and setting. Store translator, review status, back-translation/review notes, and semantic-equivalence notes in the target-language records. Translation is not localization.\n",
         encoding="utf-8",
     )
     (ENGLISH_ROOT / "docs" / "qa.md").write_text(
-        "# QA\n\nRun `uv run python -m experiment_library.validate` from project root. The validator checks ID uniqueness, references, fixed history structure, nested histories, scenario option/order fields, profile plausibility, balance, template rendering, connected cross-value graph, and a sample composition for every frame.\n",
+        "# QA\n\nRun `uv run python -m src.python.experiment_library.validation` from project root. The validator checks ID uniqueness, references, fixed history structure, nested histories, scenario option/order fields, profile plausibility, balance, template rendering, connected cross-value graph, distinct within-item realizations, and a sample composition for every frame.\n",
         encoding="utf-8",
     )
 
@@ -315,7 +423,7 @@ def generate() -> None:
     profiles = [profile_record(profile) for profile in PROFILES]
     questions, scenarios = make_questions_and_scenarios()
     graph, cross_scenarios = make_cross_value_materials()
-    write_json(LIBRARY_ROOT / "manifest.json", {"library_version": "0.1.0", "default_language": "en", "languages": {"en": {"status": "frozen_source", "revision": 1}}, **METADATA})
+    write_json(LIBRARY_ROOT / "manifest.json", {"library_version": "0.2.0", "default_language": "en", "languages": {"en": {"status": "frozen_source", "revision": 2}}, **METADATA})
     write_json(ENGLISH_ROOT / "wvs" / "survey.json", {**SURVEY, **METADATA})
     write_jsonl(ENGLISH_ROOT / "data" / "frames.jsonl", frames)
     write_jsonl(ENGLISH_ROOT / "data" / "histories.jsonl", histories)
@@ -324,6 +432,15 @@ def generate() -> None:
     write_jsonl(ENGLISH_ROOT / "wvs" / "scenarios.jsonl", scenarios)
     write_json(ENGLISH_ROOT / "wvs" / "comparison_graph.json", graph)
     write_jsonl(ENGLISH_ROOT / "wvs" / "cross_value_scenarios.jsonl", cross_scenarios)
+    write_json(
+        ENGLISH_ROOT / "wvs" / "scenario_catalog.json",
+        {
+            "description": "Pretty, human-readable mirror of the canonical scenario JSONL files.",
+            "within_question_scenarios": scenarios,
+            "cross_value_scenarios": cross_scenarios,
+            **METADATA,
+        },
+    )
     write_jsonl(ENGLISH_ROOT / "elicitation" / "templates.jsonl", [{**template, **METADATA} for template in templates()])
     write_docs(profiles)
 

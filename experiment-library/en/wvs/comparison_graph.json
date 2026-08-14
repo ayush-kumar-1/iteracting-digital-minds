@@ -101,7 +101,7 @@
       "Q197"
     ]
   ],
-  "generation_prompt_version": "v1",
+  "generation_prompt_version": "v2",
   "generation_timestamp": "2026-08-14",
   "generator_model": "human-authored pilot specification",
   "graph_id": "WVS7_PILOT_CONNECTED_PATH_V1",
@@ -134,6 +134,6 @@
     "Q196",
     "Q197"
   ],
-  "revision": 1,
+  "revision": 2,
   "translation_status": "source_frozen"
 }

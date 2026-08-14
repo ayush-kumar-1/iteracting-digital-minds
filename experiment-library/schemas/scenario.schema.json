@@ -1,17 +1,56 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "type": "object",
-  "required": ["scenario_id", "scenario_type", "context", "option_a", "option_b", "option_a_pole", "option_b_pole", "option_orders", "revision"],
+  "additionalProperties": true,
   "properties": {
-    "scenario_id": {"type": "string", "minLength": 1},
-    "scenario_type": {"type": "string"},
-    "context": {"type": "string", "minLength": 1},
-    "option_a": {"type": "string", "minLength": 1},
-    "option_b": {"type": "string", "minLength": 1},
-    "option_a_pole": {"type": "string", "minLength": 1},
-    "option_b_pole": {"type": "string", "minLength": 1},
-    "option_orders": {"type": "array", "const": ["AB", "BA"]},
-    "revision": {"type": "integer", "minimum": 1}
+    "context": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "option_a": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "option_a_pole": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "option_b": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "option_b_pole": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "option_orders": {
+      "const": [
+        "AB",
+        "BA"
+      ],
+      "type": "array"
+    },
+    "revision": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "scenario_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "scenario_type": {
+      "type": "string"
+    }
   },
-  "additionalProperties": true
+  "required": [
+    "scenario_id",
+    "scenario_type",
+    "context",
+    "option_a",
+    "option_b",
+    "option_a_pole",
+    "option_b_pole",
+    "option_orders",
+    "revision"
+  ],
+  "type": "object"
 }
