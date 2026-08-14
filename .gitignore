@@ -22,3 +22,5 @@ secrets.json
 *.listing
 *.log
 *.out
+
+Output/
