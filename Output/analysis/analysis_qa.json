@@ -1,0 +1,56 @@
+{
+  "figures": [
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_profile_gender.pdf",
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_profile_religion.pdf",
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_profile_education.pdf",
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_profile_age.pdf",
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_profile_response_style.pdf",
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_context_frame.pdf",
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_history_length.pdf",
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_elicitation_method.pdf",
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_profile_individual.pdf",
+    "/Users/ayushkumar/Dropbox/repos/interacting-digital-minds/Output/figures/appendix_b/appendix_value_sensitivity_summary.pdf"
+  ],
+  "input_rows": 83200,
+  "interaction_support_rows": 490,
+  "invalid_rows": 23333,
+  "n_coefficient_rows": 1168,
+  "n_figures": 10,
+  "n_replicates": 10,
+  "n_scenarios": 104,
+  "n_stimuli": 8320,
+  "n_support_rows": 1430,
+  "n_values": 26,
+  "no_preference_rows": 322,
+  "note": "Per-item within-value comparisons have four scenario clusters; they are retained as descriptive estimates and are not conventional significance claims.",
+  "pole_mismatches": 0,
+  "question_pole_mismatches": 0,
+  "robustness_checks": [
+    {
+      "check": "scenario_level_aggregation",
+      "n_rows": 6405,
+      "n_values": 26,
+      "note": "Ten stochastic generations are collapsed to one condition-level mean; re-estimation is not inferential with four clusters per value."
+    },
+    {
+      "check": "AB_BA_averaging",
+      "n_rows": 3308,
+      "n_values": 26,
+      "note": "Substantive poles are normalized from scenario metadata before averaging option orders."
+    },
+    {
+      "check": "exclude_high_invalid_response_stimuli",
+      "n_rows": 6041,
+      "n_values": 26,
+      "note": "Excluded 2279 stimulus cells with invalid share > 0.50."
+    },
+    {
+      "check": "alternative_nonlinear_model",
+      "n_rows": 0,
+      "n_values": 0,
+      "note": "Not estimated: per-value scenario support is below the preregistered threshold and several outcomes exhibit complete separation."
+    }
+  ],
+  "under_supported_level_rows": 1430,
+  "valid_rows": 59867
+}
